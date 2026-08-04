@@ -5,256 +5,294 @@ date: 2026-08-04
 lang: zh
 ---
 
-> 从 53 条内容中筛选出 11 条重要资讯。
+> 从 41 条内容中筛选出 12 条重要资讯。
 
 ---
 
-1. [OpenAI 展示 AI 在数学与理论计算机科学中的十项进展](#item-1) ⭐️ 9.0/10
-2. [LLM 更青睐专业能力，放大熟练用户的优势](#item-2) ⭐️ 8.0/10
-3. [MiniMax H3 登陆 ComfyUI：开放权重、原生音频与 2K 视频](#item-3) ⭐️ 8.0/10
-4. [Andy Pavlo 加入 ClickHouse，成立 ClickHouse Labs](#item-4) ⭐️ 8.0/10
-5. [Pandoc 二十周年：创作者的回顾与思考](#item-5) ⭐️ 8.0/10
-6. [Jane Street 发布 Bonsai：让 OCaml 在前后端共享类型](#item-6) ⭐️ 8.0/10
-7. [SemiAnalysis 深度解析 Kimi K3 架构：压缩内存与潜在路由](#item-7) ⭐️ 8.0/10
-8. [Qwen3.8-Max 发布：2.4 万亿参数开源权重模型，对标竞品且编程能力更优](#item-8) ⭐️ 8.0/10
-9. [DeepSeek V4-Flash 284B 在 2× RTX 3090 + 二手至强服务器上达到 33 tok/s](#item-9) ⭐️ 8.0/10
-10. [亚利桑那州立大学破解英伟达 170HX 矿卡：解锁 80GB 显存，二手价暴涨](#item-10) ⭐️ 8.0/10
-11. [苹果相册因人脸数据在伊利诺伊州面临 3250 亿美元集体诉讼](#item-11) ⭐️ 8.0/10
+1. [Shai-Hulud 供应链攻击入侵 Keyv 及相关 npm 包](#item-1) ⭐️ 9.0/10
+2. [谷歌为 Anthropic 搭建 2000 亿美元华尔街融资机器](#item-2) ⭐️ 9.0/10
+3. [Mistral 发布 3B 开放权重审核模型 Shieldstral](#item-3) ⭐️ 8.0/10
+4. [生成多元肤色的简单算法与色彩空间](#item-4) ⭐️ 8.0/10
+5. [Waymo 在达拉斯向公众开放无人驾驶出租车服务](#item-5) ⭐️ 8.0/10
+6. [联邦快递的钓鱼式邮件削弱用户信任](#item-6) ⭐️ 8.0/10
+7. [优化智能体 Harness 以支持自改进](#item-7) ⭐️ 8.0/10
+8. [MiniMax-H3 全模态模型通过 MLX 在 Apple Silicon 上本地运行](#item-8) ⭐️ 8.0/10
+9. [白宫闭门敲定 AI 评估框架，细节不公开](#item-9) ⭐️ 8.0/10
+10. [华为提出‘韬定律’：以时间缩微替代几何缩微](#item-10) ⭐️ 8.0/10
+11. [Cloudflare 弃用第三方安全工具，用 58 美元/月 AI 处理漏洞赏金](#item-11) ⭐️ 8.0/10
+12. [我国首部 L3/L4 自动驾驶强制性国标报批，2027 年实施](#item-12) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [OpenAI 展示 AI 在数学与理论计算机科学中的十项进展](https://openai.com/index/ten-advances-in-mathematics/) ⭐️ 9.0/10
+## [Shai-Hulud 供应链攻击入侵 Keyv 及相关 npm 包](https://www.aikido.dev/blog/keyv-and-friends-compromised-in-npm-supply-chain-attack) ⭐️ 9.0/10
 
-OpenAI 发布了一项重要公告，展示了人工智能在数学和理论计算机科学领域取得的十项显著进展。该公告引发了 801 条社区评论，并引发了关于 AI 在数学研究中作用的广泛讨论。 这一进展意义重大，因为它表明 AI 日益能够为基础数学和理论研究做出贡献，而不仅仅是应用性任务。它可能加速证明的发现并改变数学家的研究方式，同时也引发关于哪些智力任务仍将保持人类独有的讨论。 由于可用内容中没有提供每项进展的详细信息，因此无法列出具体的定理或问题。讨论聚焦于当前模型是能够生成猜想，还是仅仅通过暴力计算帮助快速证伪猜想。
+攻击者入侵了 keyv 维护者的 GitHub 账户，keyv 是一款周下载量超 1.27 亿次的 npm 键值存储库，并利用该访问权限在维护者的整个包组合中推送窃取凭据的恶意软件。这一 Shai-Hulud 蠕虫感染了 79 个包名下的 353 个版本，在仓库钩子仍然存在的情况下窃取了开发者和 CI 凭证。 由于 keyv 的周下载量达 1.27 亿，是广泛使用的依赖项，此次供应链攻击十分严重，恶意代码可能蔓延至整个 npm 生态系统。该攻击紧随另外两起重大 npm 供应链事件，凸显了依赖系统长期存在的脆弱性。 此次攻击与 Shai-Hulud 蠕虫相关，该蠕虫利用包生态系统的自动化机制进行传播。被入侵的包包含安装前钩子或仓库钩子，清理后仍然存在，使攻击者能够窃取开发者和 CI 流水线的凭据。
 
-hackernews · milkshakes · 8月3日 16:27 · [社区讨论](https://news.ycombinator.com/item?id=49157930)
+hackernews · cimi_ · 8月4日 11:01 · [社区讨论](https://news.ycombinator.com/item?id=49166874)
 
-**背景**: AI 辅助数学是指利用机器学习模型协助完成定理证明、猜想生成和符号运算等任务。OpenAI 等实验室一直在开发能够对数学命题进行推理的系统，最近的进展使这些工具更加实用。理论计算机科学也包含 AI 可以探索的复杂问题，但人类的直觉仍然扮演着关键角色。社区辩论反映出人们对 AI 进步速度与限度的更广泛不确定性。
+**背景**: Keyv 是 Node.js 生态中一个简单的键值存储库，常配合各种后端适配器用于数据缓存。Shai-Hulud 这类供应链攻击瞄准开发者与开源包之间的信任关系，通过入侵维护者账号向广泛使用的项目中注入恶意代码。此次事件是 npm 生态攻击更广泛趋势的一部分，此前已发生 s1ngularity 攻击以及 Josh Junon(Qix)被入侵事件，后者是 18 个 npm 包的维护者。
 
-**社区讨论**: 评论者对 AI 的指数级进步表示兴奋，一位用户将当前争论比作是处于指数曲线上 y-5、y 还是 y+5 的位置。另一些人指出，虽然 AI 可能无法凭直觉提出猜想，但它可以通过人类无法完成的机械计算快速证伪，这让人联想到《银河系漫游指南》中的情景。还有人认为，任何可计算的问题最终都会被计算机解决，但并非所有数学问题都会自动被解决。
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://cybersecuritynews.com/keyv-npm-package-compromised/">Keyv npm Package with 127M Weekly Downloads Compromised in Shai-Hulud ...</a></li>
+<li><a href="https://thehackernews.com/2026/08/keyv-linked-npm-worm-poisons-hundreds.html">Keyv-Linked npm Worm Poisons Hundreds of Packages, Plants Claude Code ...</a></li>
+<li><a href="https://www.securityweek.com/shai-hulud-supply-chain-attack-worm-used-to-steal-secrets-180-npm-packages-hit/">Shai - Hulud Supply Chain Attack : Worm Used to... - SecurityWeek</a></li>
 
-**标签**: `#AI`, `#mathematics`, `#theoretical computer science`, `#OpenAI`, `#research`
+</ul>
+</details>
+
+**社区讨论**: 社区对依赖系统的脆弱性表达了深切担忧，有评论者呼吁暂停使用安装前和安装后钩子。其他人则提出了实际缓解措施，例如在 npmrc 中设置'min-release-age=5'以避免采用刚发布的可疑包，还有人分享了关于 npm 供应链攻击技术的最新文档。
+
+**标签**: `#supply chain`, `#npm`, `#security`, `#open source`, `#dependency management`
 
 ---
 
 <a id="item-2"></a>
-## [LLM 更青睐专业能力，放大熟练用户的优势](https://www.seangoedecke.com/llms-reward-expertise/) ⭐️ 8.0/10
+## [谷歌为 Anthropic 搭建 2000 亿美元华尔街融资机器](https://www.ft.com/content/549f2e23-5aa2-49c7-9ea6-a9784ab7087c) ⭐️ 9.0/10
 
-Sean Gedecke 的文章指出，LLM 会不成比例地惠及专家，强化并放大他们已有的技能，而不是让新手轻松产出专家级成果。 这挑战了“AI 让软件开发人人平等”的流行说法。如果属实，组织和个人需要重新思考在 AI 工具、培训和专业能力培养上的投入方式。 这一论点基于实际观察而非正式实验；评论者指出，LLM 在编码和数学等可自我验证的领域之外泛化能力较差。一些评论者呼吁进行正式研究，以排除确认偏误的影响。
+《金融时报》报道，谷歌已悄然搭建了史上最大规模的基础设施融资架构之一，支持向 Anthropic 交付超过 1500 亿美元的 AI 芯片。相关合同总额约 2000 亿美元；今年 6 月，名为 Compute SPV 的特殊目的载体完成首批交易，购入约 350 亿美元硬件。 这标志着 AI 资本开支的融资方式发生范式转变——通过华尔街的风险分担，将数十亿美元的芯片和数据中心成本移出企业资产负债表。此举也加深了谷歌对 Anthropic 算力供应链的控制，并可能为整个 AI 行业开创一种可复制的融资模板。 由于 Anthropic 没有信用评级，各方分担风险：谷歌为数据中心提供担保，博通购买并协助融资芯片，阿波罗与黑石购买硬件后回租给 Anthropic。6 月 Compute SPV 首批交易约合 1 吉瓦算力、100 万颗 TPU；该模式借鉴了波音、GE 推销飞机和发动机的厂商融资玩法。
 
-hackernews · MaxMussio · 8月3日 21:13 · [社区讨论](https://news.ycombinator.com/item?id=49161518)
+telegram · zaihuapd · 8月4日 10:52
 
-**背景**: 大语言模型（LLM）是在海量文本数据上训练的人工智能系统，能够根据提示生成连贯且符合语境的回应。其输出质量在很大程度上取决于用户如何编写提示、评估结果并迭代修改，因此领域知识和严谨推理会造成明显的效果差异。这篇文章加入了关于 AI 究竟是替代还是增强人类技能的持续讨论。
+**背景**: TPU（张量处理单元）是谷歌为 AI 计算设计的专用加速芯片，负责训练和推理等场景。SPV（特殊目的载体）是为隔离金融风险而设立的法律实体，常见于资产证券化和项目融资中。厂商融资则是一种由来已久的做法——由制造商支持客户购买其设备，此次被用来为庞大的 AI 算力基础设施提供资金。
 
-**社区讨论**: 评论总体上支持这一论点，并提供了现实案例：一位用户讲述没有软件工程经验的朋友在开发简单网页应用时遇到困难，而在一旁观看的专家能够提供指导；另一位评论者将 LLM 比作放大用户自身思维方式的镜子。还有人指出，由于专业能力难以嵌入模型，RL 环境初创公司才能向前沿实验室收取高额费用；也有评论者认为这一效应需要正式研究来排除确认偏误。
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://money.udn.com/money/story/5628/9173216?from=edn_related_storybottom">谷 歌 TPU 橫空出世 多平台浪潮崛起 | 社論 | 專欄 | 經濟日報</a></li>
+<li><a href="https://baike.baidu.com/item/SPV/5115244">SPV（词汇简称）_百度百科 SPV架构全解析：跨境投资中的风险隔离、税务优化与资金流动设计指南 什么是SPV公司隔离？附真实的SPV隔离案例详解！ - 今日头条 什么是SPV，WFOE，BVI？大白话讲你知 - 今日头条 境外投资必读：什么是SPV（特殊目的公司）？设立流程、政策依据与实务... 特殊目的实体_百度百科</a></li>
 
-**标签**: `#LLM`, `#AI`, `#software-engineering`, `#expertise`, `#productivity`
+</ul>
+</details>
+
+**标签**: `#AI Infrastructure`, `#Google`, `#Anthropic`, `#Financing`, `#Chips`
 
 ---
 
 <a id="item-3"></a>
-## [MiniMax H3 登陆 ComfyUI：开放权重、原生音频与 2K 视频](https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui) ⭐️ 8.0/10
+## [Mistral 发布 3B 开放权重审核模型 Shieldstral](https://mistral.ai/news/shieldstral/) ⭐️ 8.0/10
 
-ComfyUI 宣布对 MiniMax H3 提供 day-0 支持，这是一款开放权重的全模态生成模型，可生成最高 2K 分辨率、15 秒时长且带原生音频的视频。模型文件已在 Hugging Face 的 Comfy-Org/MiniMax-H3 下重新打包，可直接用于 ComfyUI 工作流。 此次集成使最先进的视频生成模型能够通过开放且模块化的节点式界面被广泛使用，降低了创作者和研究人员的门槛。其内存优化与显存卸载技术让 2K 视频生成可在 RTX 3060 等消费级 GPU 上本地运行，标志着视频生成普及化的重要进步。 该模型的调制权重约占总参数的 40%，可被剪枝并替换为查找表，从而将内存占用从全精度下的 123.6 GB 降至最小变体的 42.5 GB，减少 66%。社区测试显示，在 16 GB RTX 4070 Ti Super 上生成 10 秒 480p 视频约需 10 分钟，质量出色，但在异常或复杂场景下会退化。
+Mistral 发布了 Shieldstral，这是一个 3B 参数的开放权重多模态安全分类器，能够在推理时根据用自然语言编写的审核策略判断文本和图像。它的表现优于最高达其规模 7 倍的模型，并在多模态安全分类方面达到了新的最先进水平。 这使得大规模内容审核变得经济高效且易于部署，对较小平台尤其有帮助。它顺应了专注于小型专用模型的趋势，为大型审核 API 提供了一种实用的替代方案。 该模型将内容审核表述为二元问答任务，并具有策略自适应性，即可以在推理时调整策略而无需重新训练。该开放权重模型可在 Hugging Face 上获得，名称为 mistralai/Shieldstral-1.0-3B。
 
-hackernews · vblanco · 8月3日 13:34 · [社区讨论](https://news.ycombinator.com/item?id=49155629)
+hackernews · riadsila · 8月4日 16:36 · [社区讨论](https://news.ycombinator.com/item?id=49171268)
 
-**背景**: ComfyUI 是一个开源的、基于节点的图形界面和后端，用于构建扩散模型的模块化工作流，可生成图像、视频和音频。MiniMax H3 是一个通用全模态生成模型，能联合理解文本、图像、视频和音频，并支持真正的多模态输入、原生音频输出以及基于指令的编辑。此次发布将这两项发展结合，把先进的视频生成带入灵活的开源工具中。
+**背景**: 开放权重模型是指训练参数公开可下载的 AI 模型，用户可以在自己的设备上运行、研究甚至修改它们。内容审核通常依赖大型专有分类器或昂贵的人工审核；一个小的、策略自适应的分类器提供了一种灵活的中间选择。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.minimax.io/blog/minimax-h3">MiniMax H 3 : An Open Model Breaking the Boundaries Between Tasks...</a></li>
-<li><a href="https://huggingface.co/Comfy-Org/MiniMax-H3">Comfy-Org/ MiniMax - H 3 · Hugging Face</a></li>
-<li><a href="https://en.wikipedia.org/wiki/ComfyUI">ComfyUI</a></li>
+<li><a href="https://mistral.ai/news/shieldstral/">Introducing Shieldstral. | Mistral AI</a></li>
+<li><a href="https://arxiv.org/html/2607.25857v1">Shieldstral - arXiv.org</a></li>
+<li><a href="https://hai.stanford.edu/ai-definitions/what-is-an-open-weight-model">What is an Open-Weight Model? - Stanford HAI</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区反应总体积极，用户报告在消费级 GPU 上结果出色且速度尚可，但也指出明显缓慢（16GB 显卡生成 10 秒 480p 视频需 10 分钟），且在非标准场景（如旋转轮椅上的人）中仍有卡顿。部分评论者质疑“输出质量无损失”这一剪枝声明的有效性，并询问这种查找表方法是否适用于 LLM。
+**社区讨论**: 评论者对该模型能否处理任意规则集、还是仅沿用现有固定审核风格感到好奇，其中一人提到无需重新训练即可调整策略的潜力。另一位用户开玩笑说应该叫“Safestral”，并称赞 Mistral 专注于小型微调模型的策略，还有用户询问它与 OpenAI 的审核 API 相比如何。有评论者表示，它似乎是图像分享平台一个现实且经济高效的解决方案。
 
-**标签**: `#AI`, `#video-generation`, `#ComfyUI`, `#MiniMax`, `#open-weights`
+**标签**: `#AI`, `#content-moderation`, `#open-weights`, `#Mistral`, `#LLM`
 
 ---
 
 <a id="item-4"></a>
-## [Andy Pavlo 加入 ClickHouse，成立 ClickHouse Labs](https://clickhouse.com/blog/andy-pavlo-joins-clickhouse) ⭐️ 8.0/10
+## [生成多元肤色的简单算法与色彩空间](https://toneyalexander.github.io/inclusive-color-space/) ⭐️ 8.0/10
 
-卡内基梅隆大学知名数据库研究者 Andy Pavlo 已加入 ClickHouse，成立新的企业研究实验室 ClickHouse Labs，专注于基础数据库研究。 此举标志着学界与业界的紧密合作，有望加速 OLAP 数据库系统的创新。在 AI 主导科技投资之际，这也让数据库研究经费问题重新受到关注。 ClickHouse 是一个开源列式 OLAP 数据库，以实时分析查询著称。新实验室的具体研究方向和架构尚未公布，但 Pavlo 在数据库系统方面的背景及其广受欢迎的 CMU 课程系列表明，其重点可能是核心数据库工程。
+作者介绍了一种自定义色彩空间和简单方程，用于生成多样且可信的肤色，并附带一个基于 JavaScript 的颜色选择器和程序化生成算法（含 Python 示例），以及交互式演示。 这为数字艺术家和游戏开发者提供了一个实用且包容的肤色选取工具，解决了常见的痛点。它也为创意工具中关于包容性和色彩建模的持续讨论做出了贡献。 该色彩空间通过 PCA 将三维肤色数据降为二维，然后手动拟合椭圆和函数来构建平滑方程。页面中包含“未来工作”部分，指出了局限性和改进空间。
 
-hackernews · nikolay_sivko · 8月3日 14:09 · [社区讨论](https://news.ycombinator.com/item?id=49156011)
+hackernews · automatoney · 8月4日 15:16 · [社区讨论](https://news.ycombinator.com/item?id=49170165)
 
-**背景**: ClickHouse 是一个开源的列式数据库管理系统，用于在线分析处理（OLAP），可通过 SQL 查询实时生成分析报告。OLAP 系统针对大数据集上的复杂查询进行优化，通常用于商业智能场景。Andy Pavlo 是卡内基梅隆大学的知名数据库教授，其数据库系统课程广受关注。企业研究实验室在科技行业由来已久，从微软研究院到近年来的各类行业实验室，ClickHouse Labs 延续了这一传统。
+**背景**: 色彩空间是一种用数值表示颜色的系统，而肤色在标准 RGB 或 Lab 空间中构成一个复杂且非均匀的区域。程序化生成是一种通过算法创建内容的方法，广泛用于游戏和数字艺术中。现有的肤色调色板往往无法涵盖人类肤色的全部多样性，因此推动了专用色彩空间的研究。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/ClickHouse">ClickHouse - Wikipedia</a></li>
-<li><a href="https://clickhouse.com/">Fast Open-Source OLAP DBMS | ClickHouse</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Online_analytical_processing">Online analytical processing - Wikipedia</a></li>
+<li><a href="https://toneyalexander.github.io/inclusive-color-space/">What Colors Are We? Constructing A Color Space For Skin Tones</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Procedural_generation">Procedural generation - Wikipedia</a></li>
+<li><a href="https://news.ycombinator.com/item?id=49170165">Show HN: Simple algorithm and color space to generate diverse skin tones | Hacker News</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区反应普遍积极而热烈。评论者向 Pavlo 表示祝贺，希望学术数据库研究经费能得到提升，并提出了关于 ClickHouse 如何处理存储计算分离以及摄取/索引权衡的技术问题。也有人希望 Pavlo 广受欢迎的课程系列能以 ClickHouse 赞助的形式继续。
+**社区讨论**: 评论者称赞了这项工作，有人认为从 PCA 降到 2D 再到手动拟合函数的手法很巧妙，还有人将其结果与 Oklab 和 Pudding 的粉底色号数据联系起来。建设性批评包括没有引用 Pantone 肤色系统，以及部分生成颜色出现绿色、蓝色或紫色色相的问题。
 
-**标签**: `#ClickHouse`, `#database research`, `#OLAP`, `#industry-academia collaboration`
+**标签**: `#color-space`, `#skin-tone`, `#procedural-generation`, `#digital-art`, `#algorithm`
 
 ---
 
 <a id="item-5"></a>
-## [Pandoc 二十周年：创作者的回顾与思考](https://pandoc.org/twenty-years-of-pandoc.html) ⭐️ 8.0/10
+## [Waymo 在达拉斯向公众开放无人驾驶出租车服务](https://waymo.com/blog/shorts/dallas-open-to-all/) ⭐️ 8.0/10
 
-Pandoc 的创造者 John MacFarlane 发布了一篇回顾文章，纪念该工具诞生二十周年，并反思了其设计选择、理念以及塑造它的社区。 Pandoc 是一款基础性的开源文档转换工具，全球的学者、写作者和开发者都在使用。这一里程碑凸显了一款设计优良、寿命长久的工具如何能够维持活跃的生态系统，并适应 Typst 等不断变化的文档格式。 Pandoc 的架构使用 N 个解析器（readers）和 M 个渲染器（writers），从而支持 N × M 种转换组合。它由加州大学伯克利分校的哲学教授 John MacFarlane 用 Haskell 编写。
+Waymo 宣布其无人驾驶出租车服务现已向达拉斯所有公众开放，覆盖达拉斯-沃斯堡都会区。 此次扩张将全无人驾驶出行带到一个以汽车为主的大都会区，为居民提供了新的交通选择，并表明自动驾驶技术正从最初的试点城市向外规模化推广。同时，正如社区讨论所示，它也引发了关于基础设施、安全和城市政策的重要讨论。 Waymo 在达拉斯的服务区域覆盖达拉斯-沃斯堡都会区，其车辆使用配备摄像头、LiDAR 和雷达传感器套件的 Waymo Driver 系统。该服务为完全无人驾驶，车内无安全驾驶员。
 
-hackernews · fiddlosopher · 8月3日 15:04 · [社区讨论](https://news.ycombinator.com/item?id=49156750)
+hackernews · xnx · 8月4日 18:29 · [社区讨论](https://news.ycombinator.com/item?id=49172836)
 
-**背景**: Pandoc 是一款免费开源的通用文档转换器，能够在 Markdown、HTML、LaTeX 等多种标记格式之间转换文件。它被广泛用作写作工具（尤其是学者）以及发布工作流的基础。
+**背景**: Waymo 始于 2009 年谷歌的自动驾驶汽车项目，2016 年作为 Alphabet 旗下独立公司分拆。2020 年 10 月，它成为首家在没有安全驾驶员的情况下提供公开机器人出租车服务的公司。机器人出租车是提供按需出行的自动驾驶车辆，它们通过摄像头、LiDAR 和雷达等传感器套件，并结合软件来安全地导航道路。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Pandoc">Pandoc</a></li>
-<li><a href="https://pandoc.org/">Pandoc - index</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Waymo">Waymo - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Robotaxi">Robotaxi - Wikipedia</a></li>
+<li><a href="https://waymo.com/waymo-driver/">Self-Driving Car Technology for a Reliable Ride - Waymo Driver</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者表达了对 Pandoc 的深深感激和对其长寿的钦佩。一些人指出选择 Haskell 影响了项目的贡献者文化，另一些人则分享了实际用法，例如日常将 Markdown 转换为 Typst，或在 Outlook 与编码工具之间移动内容。一位评论者强调这与现代『vibe-coding』（氛围编程）热潮的对比，称赞 Pandoc 是从基本原理出发正确构建的。
+**社区讨论**: 评论者的情绪总体积极但克制，强调 Waymo 车辆可预测且事故少于人类驾驶员，尤其是与洛杉矶攻击性驾驶员相比。一位用户指出，尽管 DFW 密度低且汽车文化重，但服务很受欢迎；另一位则认为无人驾驶出租车可作为一种有效的经济适用房政策，减少对停车和公共交通投资的需求。也有人提到偶尔出现车辆卡住等问题，但总体热情较高。
 
-**标签**: `#pandoc`, `#document-conversion`, `#haskell`, `#open-source`, `#software-engineering`
+**标签**: `#autonomous-vehicles`, `#waymo`, `#robotaxi`, `#transportation`, `#policy`
 
 ---
 
 <a id="item-6"></a>
-## [Jane Street 发布 Bonsai：让 OCaml 在前后端共享类型](https://github.com/janestreet/bonsai) ⭐️ 8.0/10
+## [联邦快递的钓鱼式邮件削弱用户信任](https://www.troyhunt.com/thanks-fedex-this-is-why-we-keep-getting-phished/) ⭐️ 8.0/10
 
-Bonsai 是 Jane Street 开源的 UI 库，用于用 OCaml 构建响应式 Web 应用，并通过 Js_of_ocaml 编译为 JavaScript。它让开发者可以在后端和前端使用同一种 OCaml 语言和类型。 它解决了 OCaml 前后端共享代码和类型这一长期难题，可能让 OCaml 在全栈 Web 开发中更具吸引力。由于 Jane Street 几乎所有内部 Web 应用都使用 Bonsai，该库为更广泛的 OCaml 生态提供了一个经过实战检验的参考。 Bonsai 部分受 Elm 启发，并通过 Js_of_ocaml 将 OCaml 编译为 JavaScript，而不是依赖 JavaScript 框架生态。GitHub 仓库中的 docs 目录目前缺失，导致部分指南链接失效；也有评论者不确定它更新 DOM 时是直接修改还是使用 diff 算法。
+在 2024 年的一篇博文中，安全研究员 Troy Hunt 记录了联邦快递的合法通知邮件如何具备钓鱼攻击的特征，比如意外的请求和看似可疑的链接。他认为，这些令人困惑但真实的邮件训练用户忽略危险信号，使真正的钓鱼攻击更难被识别。 这很重要，因为大品牌自身的邮件做法会削弱安全意识，让用户更容易受到真实钓鱼和社会工程攻击。它揭示了一个系统性问题：即使是善意的公司，也在侵蚀人们区分合法通信与恶意通信的关键线索。 博文引用了评论者提供的真实案例，包括由联邦快递员工个人发送的带有 PDF 附件的海关通知，以及使用 c.gle 短链接的 Google 存储空间提醒。这些案例表明，即使是安全意识较强的用户，也很难验证看似可疑但实际合法的通信。
 
-hackernews · KolmogorovComp · 8月3日 08:29 · [社区讨论](https://news.ycombinator.com/item?id=49152842)
+hackernews · stymaar · 8月4日 21:09 · [社区讨论](https://news.ycombinator.com/item?id=49175192)
 
-**背景**: OCaml 是一种通用、高级、多范式的编程语言，1996 年创建并由法国国家信息与自动化研究所（Inria）维护，除了静态分析和形式化方法外，也用于系统编程和 Web 开发。Bonsai 基于 js_of_ocaml——一个把 OCaml 字节码编译成 JavaScript 的编译器，让 OCaml 程序能在浏览器和 Node.js 中运行。通过提供受 Elm 启发的响应式模型，Bonsai 让 Jane Street 可以用与后端服务相同的语言编写 UI 逻辑。
+**背景**: 电子邮件欺骗和钓鱼攻击利用了早期电子邮件协议缺乏内置身份验证的缺陷，攻击者可以伪造发件人地址并冒充可信品牌。社会工程攻击依靠心理操纵，常利用紧迫感、恐惧或熟悉感来诱导受害者点击恶意链接或泄露凭据。当合法公司发送设计糟糕、与攻击模式相似的邮件时，会在无意中让用户对警示信号变得麻木。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://github.com/janestreet/bonsai">GitHub - janestreet/bonsai: A library for building dynamic webapps, using Js_of_ocaml · GitHub</a></li>
-<li><a href="https://en.wikipedia.org/wiki/OCaml">OCaml - Wikipedia</a></li>
-<li><a href="https://numfer.com/ocsigen/js_of_ocaml">Js _ of _ ocaml : OCaml to JavaScript Compiler</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Email_spoofing">Email spoofing</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Social_engineering_(security)">Social engineering (security) - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者整体持正面态度：有人称前后端共享类型“终于成为可能”，也有人引用了 Jane Street 的播客节目。另一些人则讨论美观度、与 Melange（Ahrefs 等公司使用）的对比，担心会失去 JavaScript 生态，并指出文档缺失和 DOM 更新方式不明确。
+**社区讨论**: 评论者分享了亲身体验，印证了 Hunt 所述困惑：有人描述一封来自联邦快递员工个人的海关邮件最终被证实是真的，还有人质疑 Google 的 c.gle 链接是否合法。其他评论指出，新顶级域名的激增，以及诈骗者和合法机构共用语音助手等做法，让非专业人士更难判断真实性。
 
-**标签**: `#OCaml`, `#UI framework`, `#Jane Street`, `#functional programming`, `#web development`
+**标签**: `#phishing`, `#email security`, `#security awareness`, `#social engineering`
 
 ---
 
 <a id="item-7"></a>
-## [SemiAnalysis 深度解析 Kimi K3 架构：压缩内存与潜在路由](https://newsletter.semianalysis.com/p/kimi-k3-the-manos-the-mythos-the) ⭐️ 8.0/10
+## [优化智能体 Harness 以支持自改进](https://lilianweng.github.io/posts/2026-07-04-harness/) ⭐️ 8.0/10
 
-SemiAnalysis 发布了一篇关于 Kimi K3 的详细技术拆解，介绍了其压缩注意力（Kimi Delta Attention）、跨深度注意力和潜在专家路由（LatentMoE）。文章还分析了 K3 的推理性能与内存占用。 Kimi K3 的设计有望显著降低大语言模型运行时的内存与算力成本，尤其是在长上下文和端侧推理场景。这篇拆解让从业者看到前沿大模型架构的发展方向。 Kimi Delta Attention 是一种压缩注意力机制，思路与 Multi-head Latent Attention（MLA）类似，能大幅削减每个 token 的 KV cache 占用。在 Stable LatentMoE 中，token 在专家分发前被压缩、聚合后再解压，并在上投影前施加 RMSNorm；甚至有 C 语言实现通过从 NVMe 流式加载专家权重，在 8GB 内存上运行。
+Lilian Weng 发表了一篇关于 Harness 工程的文章，认为优化 LLM 智能体的外部脚手架（工具、提示词和上下文）可以显著提升性能、质量和成本效率。文章提出智能体应该自我改进其 Harness，而不是只依赖模型权重。 Harness 工程正成为与模型权重并列的独立性能杠杆；同一模型在不同 Harness 下性能可相差达 6 倍。自动化 Harness 优化能减少手工工程投入，提高生产级智能体的可靠性和成本效益，对构建 LLM 系统的研究人员和工程师都有重要影响。 近期如 Meta-Harness 的研究将 Harness 视为端到端可优化空间，用完整执行轨迹而非压缩摘要来优化，取得了显著更好的效果（中位数分数 50.0 对 34.9）。社区实验显示，自动研究可以把加载上下文的过程从 20k token、15 次工具调用压缩到 800 token、1 次工具调用。
 
-rss · Semianalysis · 8月3日 19:42
+hackernews · tosh · 8月4日 06:17 · [社区讨论](https://news.ycombinator.com/item?id=49164896)
 
-**背景**: 大语言模型在推理时面临内存瓶颈，因为键值缓存（KV cache）会随上下文长度增长，而混合专家模型（MoE）由于专家权重众多，显存占用很高。LatentMoE 的思路是把路由/专家维度与模型隐藏维度解耦，在专家计算前将 token 投影到更低维的潜在空间中。跨深度注意力（如 mixture-of-depths attention）允许注意力头读取前序层的键值，有助于缓解隐藏维度瓶颈并提高训练效率。
+**背景**: 在 LLM 智能体系统中，Harness 指围绕模型的外部执行支持结构，也就是决定模型存储、检索和接收哪些信息的代码，包括提示词、工具接口、规划产物、验证循环、记忆系统和沙箱等。长期以来 Harness 主要靠人工设计，但近期研究将其视为一个独立的、可优化的性能杠杆，与基础模型能力互补。Lilian Weng 的这篇文章正是这一日益受关注的 Harness 工程方向的一部分。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://newsletter.semianalysis.com/p/kimi-k3-the-manos-the-mythos-the">Kimi K3: The Manos, The Mythos, The Legendos</a></li>
-<li><a href="https://wan27.org/blog/kimi-k3-vram-guide">Kimi K3 VRAM Requirements: How Much Memory You Actually Need to Run K3 | Wan 2.7</a></li>
-<li><a href="https://securityonline.info/kimi-k3-in-c/">Running Kimi K3 in C: Local AI Inference on 8GB RAM</a></li>
+<li><a href="https://arxiv.org/abs/2603.28052">Meta-Harness: End-to-End Optimization of Model Harnesses (PDF) Advanced Optimization Techniques For Large Language ... Meta-Harness: End-to-End Optimization of Model Harnesses Agentic Harness: Code-Driven LLM Optimization LLM Model Optimization Techniques and Frameworks Meta-Harness — automatically optimizing the code around the LLM GitHub - ai-boost/awesome-harness-engineering: Awesome list ...</a></li>
+<li><a href="https://www.preprints.org/manuscript/202606.2203">Harness Engineering for LLM Agents : A Survey of... | Preprints.org</a></li>
+<li><a href="https://zendevy.com/en/ai/harness-engineering-prompt-context-evolution/">Harness Engineering : From Prompts to Runtime Control — ZenDevy</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI/ML`, `#Architecture`, `#Inference`, `#Memory`, `#Language Models`
+**社区讨论**: Hacker News 上的讨论总体积极且带有前瞻性。参与者提出了一些实践路径，例如为代码库构建通用适应度函数、利用自动研究分析执行轨迹来发现问题并修复；还有人猜测 Harness 是否会生成自己的 RLHF/DPO 训练集。也有评论者分享个人项目或开玩笑，比如‘Torment Nexus 的探索’。
+
+**标签**: `#AI agents`, `#LLMs`, `#harness engineering`, `#optimization`
 
 ---
 
 <a id="item-8"></a>
-## [Qwen3.8-Max 发布：2.4 万亿参数开源权重模型，对标竞品且编程能力更优](https://www.reddit.com/r/LocalLLaMA/comments/1vellf2/qwen38max_matches_kimi_k3_and_deepseek_v4_flash/) ⭐️ 8.0/10
+## [MiniMax-H3 全模态模型通过 MLX 在 Apple Silicon 上本地运行](https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything) ⭐️ 8.0/10
 
-Qwen3.8-Max 是一个 2.4 万亿参数的开源权重模型，其基准测试成绩与 Kimi K3 和 DeepSeek V4 Flash 接近，并在编程和软件任务上表现更优。该模型的权重计划于下周发布。 此次发布为开源权重生态注入了又一个能力强大的模型，让开发者和企业在 API 价格相对较低的情况下获得了主流专有模型的有力替代方案。它还可能加剧编程类 AI 的竞争，并加速开源权重技术的采用。 该模型的 API 定价为：每百万输入 token 2.0 美元，每百万输出 token 6.0 美元，隐式缓存每百万 token 0.25 美元。较小的 Qwen3.8-27B 模型预计也将在不久后开放权重。
+MiniMax 发布了 MiniMax-H3，这是一个可处理文本、图像、音频和视频的全模态生成模型。Simon Willison 演示了新的 MLX 移植版（PipeNetwork/minimax-h3-mlx），使其能在 Apple Silicon 上运行，并在他的 M5 Max MacBook Pro 上根据文本提示生成了 15 秒的视频片段。 这一进展意义重大，因为它将最先进的全模态模型——支持文本、图像、音频和视频的输入/输出——带到了消费级 Apple 硬件上，而不仅仅是云端 API。它降低了本地多模态实验的门槛，也凸显了 MLX 在 AI 生态系统中日益重要的作用。 运行该模型需要下载约 115 GB 的模型文件；在 Willison 的测试中，生成一个视频耗时近 45 分钟。在没有提示词指导的情况下，音频输出被形容为“奇怪的、类似语音的乱码”，MiniMax 提供了提示词编写指南来改善效果。
 
-reddit · r/LocalLLaMA · /u/davidthesong · 8月3日 18:25
+rss · Simon Willison · 8月4日 19:10
 
-**背景**: 开源权重模型是指核心组件公开发布的人工智能模型，任何人都可以下载、检查、修改并在自己的基础设施上运行，但通常不包含训练代码或完整训练数据集。在 LLM API 定价中，隐式缓存会对重复使用的提示词前缀自动应用折扣，从而降低输入成本。Qwen 是阿里巴巴推出的开源权重模型系列，此次发布反映了超大规模开源模型追赶闭源竞品的趋势。
+**背景**: 全模态模型（omni-modal model）是能在统一架构中跨多种数据模态（如文本、图像、音频和视频）进行感知与生成的 AI 模型，通常在共享潜在空间内操作，而不是像一些系统那样把独立训练的模型拼接起来。MLX 是 Apple 开源的数组与机器学习框架，专为 Apple Silicon 设计，提供熟悉的 Python API 并支持高效的本地推理。这个移植版将 MiniMax-H3 的权重转换为 MLX 格式，使开发者能够在 Mac 上运行大型多模态生成模型。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://hai.stanford.edu/ai-definitions/what-is-an-open-weight-model">What is an Open-Weight Model? - Stanford HAI</a></li>
-<li><a href="https://opensource.org/ai/open-weights">Open Weights: not quite what you’ve been told</a></li>
-<li><a href="https://www.digitalapplied.com/blog/prompt-caching-2026-cut-llm-costs-engineering-guide">Prompt Caching in 2026: Cut LLM Costs, Keep Quality</a></li>
+<li><a href="https://opensource.apple.com/projects/mlx/">Apple Open Source</a></li>
+<li><a href="https://www.nvidia.com/en-us/glossary/omni-model/">What’s an Omni-Model? Definition, Uses, and Benefits | NVIDIA Glossary</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#LLM`, `#open-weight`, `#Qwen`, `#benchmarks`
+**标签**: `#MLX`, `#MiniMax`, `#omni-modal`, `#video generation`, `#Apple Silicon`
 
 ---
 
 <a id="item-9"></a>
-## [DeepSeek V4-Flash 284B 在 2× RTX 3090 + 二手至强服务器上达到 33 tok/s](https://www.reddit.com/r/LocalLLaMA/comments/1veow4b/deepseek_v4flash_284b_moe_at_33_toks_single_68/) ⭐️ 8.0/10
+## [白宫闭门敲定 AI 评估框架，细节不公开](https://www.axios.com/2026/08/03/white-house-finalizes-ai-framework-behind-closed-doors) ⭐️ 8.0/10
 
-一位用户在没有重新量化的前提下，用二手 Dell PowerEdge R940 四路至强 DDR4 服务器加 2 张 RTX 3090 运行了完整的 DeepSeek V4-Flash-0731 官方检查点（284B 总参数 / 13B 激活 MoE，156 GB），单流解码达到 33 tok/s，聚合最高 68 tok/s。该方案使用 vLLM 分支 Lvllmds4-x v2.3.8 和 lk_moe v2.3.1 CPU-GPU 混合引擎，并启用了 DSpark 投机解码。 这表明一个前沿级的 284B MoE 模型可以在大约 6000 美元的二手大众硬件上以可用速度运行，而无需 4000 美元以上的统一内存工作站或昂贵的数据中心 GPU。它还罕见地提供了 Ampere（sm_86）GPU 运行 Blackwell 时代检查点的 prefill/decode 数据，对本地推理社区很有价值。 路由专家（约占参数的 96%）原生以 MXFP4 格式存储，由 96 个 Xeon 核心从 768 GB DDR4 内存中流式读取，而 FP8 线性层因 Ampere 缺乏原生 FP8/FP4 计算而通过 Marlin 仅权重量化内核运行。每实例占用约 170 GB 系统内存、每卡 6.6 GB 显存，解码时整机功耗约 1000 W，GPU 仅占 136–145 W；单流 33 tok/s，4 并发聚合 53–68 tok/s，ik_llama.cpp 混合方案单流仅 12.2 tok/s。
+该框架可能成为前沿 AI 模型发布前的事实审查机制，影响 OpenAI、谷歌、Anthropic 等主要开发者。细节保密引发透明度担忧，但也表明 AI 监管正通过行政渠道推进。 该框架明确了保密、网络安全、知识产权保护和保密协议等要求，并列出可提前访问模型的“可信伙伴”名单。行政令将模型能力基准测试及适用门槛列为机密信息。
 
-reddit · r/LocalLLaMA · /u/AbbreviationsSad5582 · 8月3日 20:25
+telegram · zaihuapd · 8月4日 02:31
 
-**背景**: DeepSeek V4-Flash 是一个混合专家（MoE）模型，总参数 284B，但每个 token 只激活 13B 参数，因此 CPU 可以把不活跃的专家从系统内存流式加载到 GPU，而显存只存放活跃部分。LLM 推理分为 prefill（并行处理输入提示）和 decode（逐个生成 token）两个阶段，混合 CPU-GPU 方案往往只报告 decode 数据。DSpark 投机解码使用 5 个草稿 token 来提升单流速度。
+**背景**: 自愿 AI 评估框架是用于在模型部署前衡量其能力和风险的标准测试套件。白宫 6 月 2 日的行政令要求制定这一框架，政府除 Anthropic、OpenAI 和谷歌外，还在与众多业界伙伴商讨后续步骤。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash">deepseek -ai/ DeepSeek - V 4 - Flash · Hugging Face</a></li>
-<li><a href="https://ollama.com/library/deepseek-v4-flash">deepseek - v 4 - flash</a></li>
-<li><a href="https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/">Mastering LLM Techniques: Inference Optimization | NVIDIA Technical...</a></li>
+<li><a href="https://www.linkedin.com/posts/ainewswire_google-stax-aims-to-make-ai-model-evaluation-activity-7378790904440074240-WwQs">Google launches Stax, a customizable AI evaluation framework for...</a></li>
+<li><a href="https://epoch.ai/benchmarks">Data on AI Capabilities and Benchmarking | Epoch AI</a></li>
+<li><a href="https://www.codesota.com/tasks">Every AI Capability — Benchmark Evidence and Trust | CodeSOTA</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 有评论者指出原帖只报告 decode 而没有 prefill，这是混合 CPU-GPU 基准测试中常见的问题；作者认可这一批评并补充了 prefill 结果，还表示 prefill 数字决定了这套硬件究竟适合什么用途。讨论反映出社区对更完整、更诚实基准测试的期待。
-
-**标签**: `#LocalLLM`, `#DeepSeek`, `#AI Inference`, `#Hardware`, `#MoE`
+**标签**: `#AI政策`, `#模型评估`, `#白宫`, `#监管`, `#AI安全`
 
 ---
 
 <a id="item-10"></a>
-## [亚利桑那州立大学破解英伟达 170HX 矿卡：解锁 80GB 显存，二手价暴涨](https://finance.sina.com.cn/tech/roll/2026-08-03/doc-inikzqsf4659769.shtml) ⭐️ 8.0/10
+## [华为提出‘韬定律’：以时间缩微替代几何缩微](https://t.me/zaihuapd/42966) ⭐️ 8.0/10
 
-亚利桑那州立大学的研究人员公开了一种破解英伟达 CMP 170HX 矿卡的方法，可将显存最高扩展到 80GB，FP32 算力从 0.39 TFLOPS 提升到 94 TFLOPS。消息传出后，该卡二手价从 300-500 元飙升至 3000-4000 元，海外市场甚至叫价 1500 美元。 这一突破将廉价且被高度锁定的矿卡转化为强大的 AI 加速器，降低了 AI 研究人员、爱好者和小型创业公司获得高端算力的门槛。同时，它也挑战了英伟达通过硬件强制实现的产品划分策略，并可能扰乱矿卡的二手市场。 该破解利用了 Falcon 安全协处理器中的栈溢出漏洞，绕过英伟达的一次性可编程（OTP）熔丝锁定，进而修改硬件寄存器。解锁后的卡可在 Windows 和 Linux 下直接运行 AI 图像生成及大语言模型推理，但长期稳定性以及不同批次的最高解锁能力仍存在差异。
+在 2026 年国际电路与系统研讨会上，华为提出‘韬定律’（τ缩放定律），主张以时间缩微取代几何缩微作为半导体演进的新原则。华为称过去六年已按该定律设计并量产 381 款芯片，今年秋季将推出采用逻辑折叠技术的新麒麟手机芯片。 若经验证，韬定律可在不依赖最先进光刻机的情况下延续半导体进步，突破摩尔定律的物理极限，影响整个芯片产业。对华为乃至中国而言，这尤其重要，为在出口管制下达到先进芯片密度和系统性能提供了替代路径。 韬定律通过华为‘逻辑折叠’多层级协同优化，在器件、电路、芯片和系统各层面系统性地降低特征时间常数τ。华为预计，到 2031 年基于该定律的高端芯片晶体管密度可达 1.4 纳米制程同等水平，并表示未来将以开放合作推动产业发展。
 
-telegram · zaihuapd · 8月3日 11:29
+telegram · zaihuapd · 8月4日 08:04
 
-**背景**: 英伟达 CMP 170HX 是 2021 年推出的加密货币专用矿卡，采用与 A100 数据中心加速卡相同的 GA100 核心。出厂时通过一次性可编程（OTP）熔丝对显存、算力和 PCIe 通道进行了永久限制，此前一度被认为无法逆转。社区项目已展示借助自定义驱动和对熔丝限制的绕过，可将该卡改造为可用的 AI 加速器。
+**背景**: 摩尔定律是半导体行业长期遵循的经验法则，即晶体管密度大约每两年翻一番；但随着单纯靠缩小尺寸带来的收益递减，该定律正逼近物理极限。几何缩微指不断缩小芯片上的特征尺寸，而时间缩微则通过降低决定器件开关速度的时间常数，从器件、电路、芯片到系统多个层面进行协同优化，以提升密度、能效和性能。韬定律于 2026 年 IEEE ISCAS 会议上发布，相关理论论文已在中国预印本平台 ChinaXiv 上公开。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://gist.github.com/luqiu732/93b54226ccb45ac0b9504b1f87d8cd11">GA100 Fuse & Register Reference Table — Full Ampere Lineup...</a></li>
-<li><a href="https://ai-manual.ru/article/cmp-170hx-kak-gpu-dlya-ai-razblokirovka-64-gb-hbm2e-i-173-tflops-v-bf16/">CMP 170 HX как GPU для AI: разблокировка 64 ГБ... | AiManual</a></li>
+<li><a href="https://www.huawei.com/en/news/2026/5/ieee-iscas-tau-scaling">HUAWEI Presents the Tau (τ) Scaling Law, Enabling Breakthroughs in Transistor Density and System Performance - Huawei</a></li>
+<li><a href="https://www.globaltimes.cn/page/202605/1361841.shtml">Huawei unveils new semiconductor law, charting fresh path for industry development - Global Times</a></li>
+<li><a href="https://chinarxiv.org/items/chinaxiv-202605.00224">A Time Scaling Theory for Multi-Layer Electronic Systems</a></li>
 
 </ul>
 </details>
 
-**标签**: `#hardware hacking`, `#GPU`, `#AI`, `#security`, `#NVIDIA`
+**标签**: `#semiconductors`, `#Huawei`, `#Moore's Law`, `#chip design`, `#hardware innovation`
 
 ---
 
 <a id="item-11"></a>
-## [苹果相册因人脸数据在伊利诺伊州面临 3250 亿美元集体诉讼](https://appleinsider.com/articles/26/08/03/apple-photos-facial-features-prompt-a-325b-class-action-lawsuit) ⭐️ 8.0/10
+## [Cloudflare 弃用第三方安全工具，用 58 美元/月 AI 处理漏洞赏金](https://www.theregister.com/security/2026/08/04/cloudflare-has-mostly-ditched-third-party-security-tools-suggests-not-trying-that-at-home/5282600) ⭐️ 8.0/10
 
-6 月 30 日，美国第七巡回上诉法院驳回了苹果的上诉，允许一项集体诉讼继续推进。该诉讼指控苹果相册在未经同意的情况下，依据伊利诺伊州《生物识别信息隐私法》收集人脸数据，代表该州约 650 万居民索赔最高达 3250 亿美元。 这是有史以来规模最大的生物识别隐私诉讼之一，潜在赔偿金额甚至可能超过苹果的年营收。此案结果可能为 BIPA 如何适用于照片管理等消费软件功能树立里程碑式先例，影响科技巨头及全美数百万用户。 该诉讼指控苹果相册通过人脸识别扫描照片中的人物，为每个人生成“面部特征”，并通过 iCloud 同步这些数据。苹果曾辩称该流程不构成生物识别标识符且已有隐私保护措施，但法官裁定该案符合集体诉讼条件，上诉法院于 6 月 30 日维持了这一裁决。
+Cloudflare 首席安全官 Grant Bourzikas 在悉尼的一次活动上透露，该公司现在使用 Anthropic 的 Claude Sonnet 自动化处理漏洞赏金报告，每月仅花费 58 美元，而使用安全专用模型则需约 20 万美元/月。公司还构建了 200 多个自主安全代理，并基本弃用第三方安全工具，改用自研应用。 这件事之所以重要，是因为它展示了一家大型科技公司以极低的成本将 AI 代理和前沿模型应用于核心安全工作流程，可能重塑安全运营的人员配置与工具选型方式。它也标志着行业正更广泛地向 AI 驱动自动化转型，对安全厂商和安全团队的角色都将产生影响。 Bourzikas 明确提醒其他企业不要效仿 Cloudflare 的做法，称并非每家银行都该自己开发所有软件。此外，首席战略官 Stephanie Cohen 将公司此前裁员 1100 人归因于 AI 带来的自动化变革，并透露 Cloudflare 计划通过微支付充当 AI 公司与出版商之间的中介。
 
-telegram · zaihuapd · 8月3日 14:33
+telegram · zaihuapd · 8月4日 09:24
 
-**背景**: 伊利诺伊州 2008 年颁布的《生物识别信息隐私法》是美国首部规范指纹、面部扫描等生物识别标识符采集与使用的法律。BIPA 赋予个人对违规行为提起诉讼的权利，过失违规每次赔偿 1000 美元，故意或鲁莽违规每次赔偿 5000 美元。包括谷歌在内的多家科技公司都因照片标记功能遭遇过类似的 BIPA 集体诉讼。该法对“生物识别标识符”的定义，是判断苹果面部特征数据是否适用的核心。
+**背景**: Claude Sonnet 是 Anthropic 推出的中端大语言模型，属于包含 Haiku（最小）和 Opus（最大）的模型家族。2026 年，Anthropic 还发布了 Claude Mythos，这是一款专门的自主网络安全模型，能够发现并利用漏洞，最初仅向部分组织提供。Cloudflare 使用更便宜的通用型 Sonnet 进行漏洞赏金分类，说明许多安全任务并不需要最昂贵的专用模型。该公司的做法反映了企业自建 AI 代理流程、而非简单购买现成安全产品的新趋势。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Biometric_Information_Privacy_Act">Biometric Information Privacy Act - Wikipedia</a></li>
-<li><a href="https://www.mofo.com/resources/insights/240503-getting-bipa-right-biometric-identifiers-must-identify">Getting BIPA Right: Biometric Identifiers Must Identify | Morrison Foerster</a></li>
-<li><a href="https://www.commerciallitigationupdate.com/biometric-backlash-the-rising-wave-of-litigation-under-bipa-and-beyond">Biometric Backlash: The Rising Wave of Litigation Under BIPA and Beyond | Epstein Becker Green</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Claude_Sonnet">Claude Sonnet</a></li>
+<li><a href="https://www.contrastsecurity.com/glossary/mythos-ai">What Is Mythos AI? Autonomous Exploits and AppSec Defense | Contrast Security</a></li>
+<li><a href="https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities">Our evaluation of Claude Mythos Preview’s cyber capabilities | AISI Work</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Apple`, `#Privacy`, `#Biometric Data`, `#Facial Recognition`, `#Lawsuit`
+**标签**: `#AI`, `#Security`, `#Cloudflare`, `#Automation`, `#Bug Bounty`
+
+---
+
+<a id="item-12"></a>
+## [我国首部 L3/L4 自动驾驶强制性国标报批，2027 年实施](https://t.me/zaihuapd/42972) ⭐️ 8.0/10
+
+我国工业和信息化部已完成《智能网联汽车自动驾驶系统安全要求》强制性国家标准报批稿，并于 6 月 17 日起公示。该标准建议 2027 年 7 月 1 日实施，是我国首部针对 L3 和 L4 级自动驾驶的强制性国标，并引入了 Safety Case 安全档案机制。 这标志着自动驾驶监管从宽松的营销化宣传转向可执行的安全硬约束。车企必须通过结构化论证系统性地证明安全性，这将重塑中国自动驾驶行业的研发、测试与合规流程。 该标准要求企业采用'声明—论据—证据'的结构建立 Safety Case 安全档案，在全生命周期内论证安全性。同时对 L3 级系统提出人机交接和驾驶人接管能力监测要求，对 L4 级系统提出自主风险处置能力要求。
+
+telegram · zaihuapd · 8月4日 13:06
+
+**背景**: L3 和 L4 是 SAE 定义的高级驾驶自动化等级：L3 在特定条件下可由系统驾驶，但需人类在请求时接管；L4 则可在限定场景内无需人工干预完成全部驾驶任务。Safety Case 是一套由证据支持的结构化安全论证体系，源于高风险行业，用于证明系统在特定环境下运行是可接受安全的，使监管逻辑从'满足条款'转向'自证安全'。中国工程院院士李骏指出，2026 年是全球自动驾驶安全监管的拐点，行业将全面进入 Safety Case 时代。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.ithome.com/0/966/272.htm">我国首部 L3/L4 自动驾驶强制性国标公示：2027 年 7 月起正式实施，车...</a></li>
+<li><a href="https://baike.baidu.com/item/Safety+Case/67871945">Safety Case - 百度百科</a></li>
+<li><a href="https://www.sohu.com/a/1040778204_100084983">中国工程院院士李骏：自动驾驶安全进入Safety Case时代</a></li>
+
+</ul>
+</details>
+
+**标签**: `#autonomous-driving`, `#regulation`, `#safety-standards`, `#China`, `#L3/L4`
 
 ---

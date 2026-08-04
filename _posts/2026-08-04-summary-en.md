@@ -5,256 +5,294 @@ date: 2026-08-04
 lang: en
 ---
 
-> From 53 items, 11 important content pieces were selected
+> From 41 items, 12 important content pieces were selected
 
 ---
 
-1. [OpenAI presents ten AI-driven advances in math and theoretical CS](#item-1) ⭐️ 9.0/10
-2. [LLMs Reward Expertise, Amplifying Skilled Users' Edge](#item-2) ⭐️ 8.0/10
-3. [MiniMax H3 Lands on ComfyUI: Open Weights, Native Audio, 2K Video](#item-3) ⭐️ 8.0/10
-4. [Andy Pavlo Joins ClickHouse to Launch ClickHouse Labs](#item-4) ⭐️ 8.0/10
-5. [Pandoc Turns Twenty: Creator Reflects on Design and Community](#item-5) ⭐️ 8.0/10
-6. [Jane Street's Bonsai lets OCaml developers share types across frontend and backend](#item-6) ⭐️ 8.0/10
-7. [SemiAnalysis Deep-Dives Kimi K3's Novel Architecture](#item-7) ⭐️ 8.0/10
-8. [Qwen3.8-Max, a 2.4T Open-Weight Model, Matches Rivals and Excels at Coding](#item-8) ⭐️ 8.0/10
-9. [DeepSeek V4-Flash 284B runs at 33 tok/s on 2× RTX 3090 and used Xeon](#item-9) ⭐️ 8.0/10
-10. [ASU Researchers Unlock NVIDIA CMP 170HX Miners to 80GB VRAM, Prices Surge](#item-10) ⭐️ 8.0/10
-11. [Apple Photos faces $325B class action over facial data in Illinois](#item-11) ⭐️ 8.0/10
+1. [Shai-Hulud Supply Chain Attack Compromises Keyv and Related npm Packages](#item-1) ⭐️ 9.0/10
+2. [Google Builds $200B Wall Street Financing Machine for Anthropic](#item-2) ⭐️ 9.0/10
+3. [Mistral Releases Shieldstral, a 3B Open-Weights Moderation Model](#item-3) ⭐️ 8.0/10
+4. [Simple Algorithm and Color Space for Diverse Skin Tones](#item-4) ⭐️ 8.0/10
+5. [Waymo Opens Robotaxi Service to Public in Dallas](#item-5) ⭐️ 8.0/10
+6. [FedEx's Phish-Like Emails Erode User Trust, Says Troy Hunt](#item-6) ⭐️ 8.0/10
+7. [Optimizing the Harness Around LLM Agents for Self-Improvement](#item-7) ⭐️ 8.0/10
+8. [MiniMax-H3 Omni-Modal Model Runs Locally on Apple Silicon via MLX](#item-8) ⭐️ 8.0/10
+9. [White House Finalizes AI Evaluation Framework Behind Closed Doors](#item-9) ⭐️ 8.0/10
+10. [Huawei Presents Tau Scaling Law to Replace Geometric Scaling in Semiconductors](#item-10) ⭐️ 8.0/10
+11. [Cloudflare Ditches Third-Party Security Tools, Uses $58/Month AI for Bug Bounty Triage](#item-11) ⭐️ 8.0/10
+12. [China approves first mandatory L3/L4 autonomous driving safety standard, effective 2027](#item-12) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [OpenAI presents ten AI-driven advances in math and theoretical CS](https://openai.com/index/ten-advances-in-mathematics/) ⭐️ 9.0/10
+## [Shai-Hulud Supply Chain Attack Compromises Keyv and Related npm Packages](https://www.aikido.dev/blog/keyv-and-friends-compromised-in-npm-supply-chain-attack) ⭐️ 9.0/10
 
-OpenAI published a major announcement showcasing ten notable AI-driven advances in mathematics and theoretical computer science. The post generated 801 community comments and sparked broad discussion about the role of AI in mathematical research. This matters because it signals that AI is increasingly capable of contributing to core mathematical and theoretical research, not just applied tasks. It could accelerate proof discovery and change how mathematicians work, while also raising questions about which intellectual tasks will remain uniquely human. The announcement does not provide full details of each advance in the available content, so the specific theorems or problems are not listed. The discussion focuses on whether current models can generate conjectures or merely help disprove them through brute-force computation.
+Attackers compromised the GitHub account of the maintainer of keyv, a popular npm key-value storage library with over 127 million weekly downloads, and used that access to push credential-stealing malware across the maintainer's entire package portfolio. The Shai-Hulud worm poisoned 353 versions across 79 package names, stealing developer and CI credentials while repository hooks remained present. This is a critical supply chain attack because keyv is a widely used dependency with 127 million weekly downloads, so the malicious code can propagate through the entire npm ecosystem. It follows two other major npm supply chain incidents, highlighting persistent vulnerabilities in the dependency system. The attack is related to the Shai-Hulud worm, which exploits the automation of the package ecosystem to spread. The compromised packages included pre-install or repository hooks that persisted after the cleanup, allowing credential theft from developers and CI pipelines.
 
-hackernews · milkshakes · Aug 3, 16:27 · [Discussion](https://news.ycombinator.com/item?id=49157930)
+hackernews · cimi_ · Aug 4, 11:01 · [Discussion](https://news.ycombinator.com/item?id=49166874)
 
-**Background**: AI for mathematics involves using machine learning models to assist with tasks like theorem proving, conjecture generation, and symbolic manipulation. OpenAI and other labs have been developing systems that can reason about mathematical statements, and recent progress has made these tools more practical. Theoretical computer science also includes complex problems that AI can help explore, though human intuition still plays a key role. The community debate reflects broader uncertainty about the pace and limits of AI progress.
+**Background**: Keyv is a simple key-value storage library for Node.js, often used to cache data with adapters for various backends. Supply chain attacks like Shai-Hulud target the trust relationship between developers and open-source packages, compromising maintainer accounts to inject malicious code into widely used projects. This incident is part of a broader trend of attacks on the npm ecosystem, following the s1ngularity attack and the compromise of Josh Junon (Qix), maintainer of 18 npm packages.
 
-**Discussion**: Comments express excitement about the exponential progress of AI, with one user comparing current debates to arguing about whether we are at y-5, y, or y+5 on an exponential curve. Others note that while AI may not intuit conjectures, it can quickly disprove them through grind, echoing a Hitchhiker's Guide scenario. Some argue that any computable problem will eventually fall to computers, but that not all math is automatically solved.
+<details><summary>References</summary>
+<ul>
+<li><a href="https://cybersecuritynews.com/keyv-npm-package-compromised/">Keyv npm Package with 127M Weekly Downloads Compromised in Shai-Hulud ...</a></li>
+<li><a href="https://thehackernews.com/2026/08/keyv-linked-npm-worm-poisons-hundreds.html">Keyv-Linked npm Worm Poisons Hundreds of Packages, Plants Claude Code ...</a></li>
+<li><a href="https://www.securityweek.com/shai-hulud-supply-chain-attack-worm-used-to-steal-secrets-180-npm-packages-hit/">Shai - Hulud Supply Chain Attack : Worm Used to... - SecurityWeek</a></li>
 
-**Tags**: `#AI`, `#mathematics`, `#theoretical computer science`, `#OpenAI`, `#research`
+</ul>
+</details>
+
+**Discussion**: The community expressed deep concern about the fragility of dependency systems, with one commenter calling for a moratorium on pre-install and post-install hooks. Others suggested practical mitigations such as setting 'min-release-age=5' in npmrc to avoid adopting freshly published malicious packages, while another shared updated documentation on npm supply chain attack techniques.
+
+**Tags**: `#supply chain`, `#npm`, `#security`, `#open source`, `#dependency management`
 
 ---
 
 <a id="item-2"></a>
-## [LLMs Reward Expertise, Amplifying Skilled Users' Edge](https://www.seangoedecke.com/llms-reward-expertise/) ⭐️ 8.0/10
+## [Google Builds $200B Wall Street Financing Machine for Anthropic](https://www.ft.com/content/549f2e23-5aa2-49c7-9ea6-a9784ab7087c) ⭐️ 9.0/10
 
-Sean Gedecke's article argues that LLMs disproportionately benefit experts, reinforcing and amplifying their existing skills rather than enabling novices to produce expert-level output. This challenges the popular claim that AI levels the playing field for software development. If true, organizations and individuals need to rethink how they invest in AI tools, training, and expertise development. The argument is grounded in practical observations rather than formal experimentation, and commenters note that LLMs generalize poorly outside self-verifiable domains like coding and math. Some commenters call for formal study to rule out confirmation bias.
+The Financial Times reported that Google has quietly assembled one of the largest infrastructure financing structures in history, underpinning more than $150 billion in AI chip deliveries to Anthropic. The contracts total roughly $200 billion, and the first tranche of transactions closed in June through a vehicle called Compute SPV, purchasing about $35 billion in hardware. This marks a paradigm shift in how AI capital expenditure is funded, moving billions in chip and data-center costs off corporate balance sheets through Wall Street risk-sharing. It deepens Google's grip on Anthropic's compute supply chain and creates a template that could reshape financing across the AI industry. Because Anthropic lacks a credit rating, the parties share risk: Google guarantees data centers, Broadcom buys and helps finance chips, and Apollo and Blackstone purchase hardware and lease it back to Anthropic. The June Compute SPV batch equated to about 1 gigawatt of compute and 1 million TPUs, and the model resembles Boeing and GE's vendor-financing playbook.
 
-hackernews · MaxMussio · Aug 3, 21:13 · [Discussion](https://news.ycombinator.com/item?id=49161518)
+telegram · zaihuapd · Aug 4, 10:52
 
-**Background**: Large language models (LLMs) are AI systems trained on massive text corpora to generate coherent and contextually appropriate responses to prompts. Their output quality heavily depends on how a user formulates prompts, evaluates results, and iterates, which means domain expertise and careful reasoning can create large performance differences. The article contributes to an ongoing debate about whether AI replaces or augments human skill.
+**Background**: TPUs (Tensor Processing Units) are Google's custom application-specific accelerators designed for AI workloads, complementing GPUs in training and inference. An SPV (Special Purpose Vehicle) is a legal entity created to isolate financial risk, commonly used in securitization and project finance. Vendor financing is a long-established practice in which a manufacturer supports customers' purchases of its equipment — here adapted to fund massive AI compute infrastructure.
 
-**Discussion**: Comments largely support the thesis with real-world anecdotes: one user described a non-expert friend struggling with a simple web app while an expert watching could guide her, and another compared LLMs to an amplifying mirror of the user's own mindset. Others noted that RL environment startups charge frontier labs large sums because expertise is hard to embed, and one commenter said the effect needs formal study to rule out confirmation bias.
+<details><summary>References</summary>
+<ul>
+<li><a href="https://money.udn.com/money/story/5628/9173216?from=edn_related_storybottom">谷 歌 TPU 橫空出世 多平台浪潮崛起 | 社論 | 專欄 | 經濟日報</a></li>
+<li><a href="https://baike.baidu.com/item/SPV/5115244">SPV（词汇简称）_百度百科 SPV架构全解析：跨境投资中的风险隔离、税务优化与资金流动设计指南 什么是SPV公司隔离？附真实的SPV隔离案例详解！ - 今日头条 什么是SPV，WFOE，BVI？大白话讲你知 - 今日头条 境外投资必读：什么是SPV（特殊目的公司）？设立流程、政策依据与实务... 特殊目的实体_百度百科</a></li>
 
-**Tags**: `#LLM`, `#AI`, `#software-engineering`, `#expertise`, `#productivity`
+</ul>
+</details>
+
+**Tags**: `#AI Infrastructure`, `#Google`, `#Anthropic`, `#Financing`, `#Chips`
 
 ---
 
 <a id="item-3"></a>
-## [MiniMax H3 Lands on ComfyUI: Open Weights, Native Audio, 2K Video](https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui) ⭐️ 8.0/10
+## [Mistral Releases Shieldstral, a 3B Open-Weights Moderation Model](https://mistral.ai/news/shieldstral/) ⭐️ 8.0/10
 
-ComfyUI has announced day-0 support for MiniMax H3, an open-weights omni-modal generation model that can produce video with native audio at up to 2K resolution and 15 seconds in length. The model files are repackaged on Hugging Face under Comfy-Org/MiniMax-H3 for direct use in ComfyUI workflows. This integration makes a state-of-the-art video generation model accessible to a wide audience through an open and modular node-based interface, lowering the barrier for creators and researchers. Its memory optimization and VRAM offloading allow 2K video generation to run locally on consumer GPUs such as the RTX 3060, marking notable progress in accessible AI video generation. The model's modulation weights, about 40% of total parameters, can be pruned and replaced with a lookup table, cutting memory footprint from 123.6 GB in full precision to 42.5 GB with the smallest variants — a 66% reduction. Community tests show 10-second 480p generation takes about 10 minutes on a 16 GB RTX 4070 Ti Super, with quality remaining spectacular but degrading in unusual or complex scenarios.
+Mistral has released Shieldstral, a 3B-parameter open-weights multimodal safety classifier that judges text and images against moderation policies written in plain language at inference time. It outperforms models up to 7x its size and sets a new state of the art on multimodal safety classification. This enables cost-effective, deployable content moderation at scale, especially for smaller platforms. It adds to the trend of specialized small models, offering a practical alternative to larger moderation APIs. The model formulates content moderation as a binary question-answering task and is policy-adaptive, meaning policies can be adjusted at inference without retraining. The open-weights model is available on Hugging Face as mistralai/Shieldstral-1.0-3B.
 
-hackernews · vblanco · Aug 3, 13:34 · [Discussion](https://news.ycombinator.com/item?id=49155629)
+hackernews · riadsila · Aug 4, 16:36 · [Discussion](https://news.ycombinator.com/item?id=49171268)
 
-**Background**: ComfyUI is an open-source, node-based graphical user interface and backend for constructing modular workflows with diffusion models, enabling generation of images, videos, and audio. MiniMax H3 is a general-purpose omni-modal generation model that jointly understands text, images, video, and audio, and is designed to support true multimodal input, native audio output, and instruction-based editing in a single model. This release combines these two developments, bringing advanced video generation to a flexible open-source tool.
+**Background**: Open-weights models are AI models whose trained parameters are publicly downloadable, allowing users to run, study, and modify them. Content moderation typically relies on large proprietary classifiers or expensive human review; a small, policy-adaptive classifier offers a flexible middle ground.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.minimax.io/blog/minimax-h3">MiniMax H 3 : An Open Model Breaking the Boundaries Between Tasks...</a></li>
-<li><a href="https://huggingface.co/Comfy-Org/MiniMax-H3">Comfy-Org/ MiniMax - H 3 · Hugging Face</a></li>
-<li><a href="https://en.wikipedia.org/wiki/ComfyUI">ComfyUI</a></li>
+<li><a href="https://mistral.ai/news/shieldstral/">Introducing Shieldstral. | Mistral AI</a></li>
+<li><a href="https://arxiv.org/html/2607.25857v1">Shieldstral - arXiv.org</a></li>
+<li><a href="https://hai.stanford.edu/ai-definitions/what-is-an-open-weight-model">What is an Open-Weight Model? - Stanford HAI</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community reactions are largely positive, with users reporting spectacular results and decent speed on consumer GPUs, while noting noticeable slowness (10 minutes for a 10-second 480p clip on a 16 GB card) and persistent jank in non-standard scenarios like spinning a person on a wheel. Some commenters question the validity of the 'no loss in output quality' claim for pruning, asking whether the lookup-table approach could be applied to LLMs.
+**Discussion**: Commenters were curious about the model's flexibility to handle arbitrary rulesets versus a fixed moderation style, with one noting the potential for policy tuning without retraining. Another joked about the name and praised Mistral's focus on smaller fine-tuned models, while a user asked how it compares to OpenAI's moderation API. One commenter said it seems like a realistic cost-effective solution for image-sharing platforms.
 
-**Tags**: `#AI`, `#video-generation`, `#ComfyUI`, `#MiniMax`, `#open-weights`
+**Tags**: `#AI`, `#content-moderation`, `#open-weights`, `#Mistral`, `#LLM`
 
 ---
 
 <a id="item-4"></a>
-## [Andy Pavlo Joins ClickHouse to Launch ClickHouse Labs](https://clickhouse.com/blog/andy-pavlo-joins-clickhouse) ⭐️ 8.0/10
+## [Simple Algorithm and Color Space for Diverse Skin Tones](https://toneyalexander.github.io/inclusive-color-space/) ⭐️ 8.0/10
 
-Andy Pavlo, a prominent database researcher from Carnegie Mellon University, has joined ClickHouse to establish ClickHouse Labs, a new corporate research lab dedicated to fundamental database research. This move signals a strong industry-academia collaboration that could accelerate innovation in OLAP database systems. It also brings renewed attention to database research funding at a time when AI dominates technology investment. ClickHouse is an open-source column-oriented OLAP database known for real-time analytical queries. The new lab's specific research agenda and structure have not yet been detailed, but Pavlo's background in database systems and his popular CMU lecture series suggest a focus on core database engineering.
+The author introduces a custom color space and simple equations for generating diverse, plausible skin tones, along with a JavaScript color picker and procedural generation algorithm (with Python examples) and interactive demos. This provides digital artists and game developers with a practical, inclusive tool for skin tone selection, addressing a common pain point. It also contributes to ongoing discussions about representation and color modeling in creative tools. The color space was derived using PCA to reduce 3D skin tone data to 2D, followed by hand-fitting an ellipse and function to create smooth equations. The page includes a future work section noting limitations and room for improvement.
 
-hackernews · nikolay_sivko · Aug 3, 14:09 · [Discussion](https://news.ycombinator.com/item?id=49156011)
+hackernews · automatoney · Aug 4, 15:16 · [Discussion](https://news.ycombinator.com/item?id=49170165)
 
-**Background**: ClickHouse is an open-source column-oriented database management system for online analytical processing (OLAP), enabling real-time analytical reports via SQL. OLAP systems are optimized for complex queries over large datasets, typically in business intelligence. Andy Pavlo is a well-known database professor at Carnegie Mellon University who teaches a widely watched database systems course. Corporate research labs have a long history in the tech industry, from Microsoft Research to more recent industry labs, and ClickHouse Labs follows this tradition.
+**Background**: A color space is a system for representing colors numerically, and skin tones form a complex, non-uniform region within standard RGB or Lab spaces. Procedural generation is an algorithmic method for creating content, widely used in games and digital art. Existing skin tone palettes often fail to cover the full diversity of human skin, motivating work on specialized color spaces.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/ClickHouse">ClickHouse - Wikipedia</a></li>
-<li><a href="https://clickhouse.com/">Fast Open-Source OLAP DBMS | ClickHouse</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Online_analytical_processing">Online analytical processing - Wikipedia</a></li>
+<li><a href="https://toneyalexander.github.io/inclusive-color-space/">What Colors Are We? Constructing A Color Space For Skin Tones</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Procedural_generation">Procedural generation - Wikipedia</a></li>
+<li><a href="https://news.ycombinator.com/item?id=49170165">Show HN: Simple algorithm and color space to generate diverse skin tones | Hacker News</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community reaction is overwhelmingly positive and enthusiastic. Commenters congratulated Pavlo, expressed hope that academic database research funding gets a boost, and raised technical questions about how ClickHouse will handle decoupled compute/storage and ingestion/indexing trade-offs. Some also hope Pavlo's popular lecture series continue in a ClickHouse-sponsored format.
+**Discussion**: Commenters praised the work, with some noting the PCA-to-2D and hand-fitted function approach as elegant, and others linking the results to Oklab and The Pudding's foundation shade data. Constructive critiques include the absence of references to Pantone Skin Tones and reports of green, blue, or purple hues in some generated colors.
 
-**Tags**: `#ClickHouse`, `#database research`, `#OLAP`, `#industry-academia collaboration`
+**Tags**: `#color-space`, `#skin-tone`, `#procedural-generation`, `#digital-art`, `#algorithm`
 
 ---
 
 <a id="item-5"></a>
-## [Pandoc Turns Twenty: Creator Reflects on Design and Community](https://pandoc.org/twenty-years-of-pandoc.html) ⭐️ 8.0/10
+## [Waymo Opens Robotaxi Service to Public in Dallas](https://waymo.com/blog/shorts/dallas-open-to-all/) ⭐️ 8.0/10
 
-John MacFarlane, the creator of Pandoc, published a retrospective marking the tool's twentieth anniversary, reflecting on its design choices, philosophy, and the community that shaped it. Pandoc is a foundational open-source document converter used by scholars, writers, and developers worldwide. This milestone highlights how a well-designed, long-lived tool can sustain a vibrant ecosystem and adapt to changing document formats like Typst. Pandoc's architecture uses N parsers (readers) and M renderers (writers) to support N × M conversions. It is written in Haskell and created by John MacFarlane, a philosophy professor at the University of California, Berkeley.
+Waymo has expanded its fully autonomous ride-hailing service to Dallas, opening it to all members of the public. The service is now available across the Dallas-Fort Worth metroplex. This expansion brings fully driverless rides to a major, car-centric metroplex, offering residents a new transportation option and demonstrating that autonomous vehicle technology is scaling beyond initial pilot cities. It also raises important discussions about infrastructure, safety, and urban policy, as seen in the community response. Waymo's Dallas service area covers the Dallas-Fort Worth metroplex, and its vehicles use the Waymo Driver system, which relies on a sensor suite of cameras, LiDAR, and radar. The service is fully autonomous, with no safety driver on board.
 
-hackernews · fiddlosopher · Aug 3, 15:04 · [Discussion](https://news.ycombinator.com/item?id=49156750)
+hackernews · xnx · Aug 4, 18:29 · [Discussion](https://news.ycombinator.com/item?id=49172836)
 
-**Background**: Pandoc is a free and open-source universal document converter that can transform files between a wide range of markup formats, including Markdown, HTML, LaTeX, and many others. It is widely used as a writing tool, especially by scholars, and as a basis for publishing workflows.
+**Background**: Waymo began as Google's self-driving car project in 2009 and was spun out as a separate Alphabet company in 2016. In October 2020, it became the first company to offer a public robotaxi service without safety drivers. Robotaxis are autonomous vehicles that provide on-demand rides, and they rely on a suite of sensors combined through software to navigate roads safely.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Pandoc">Pandoc</a></li>
-<li><a href="https://pandoc.org/">Pandoc - index</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Waymo">Waymo - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Robotaxi">Robotaxi - Wikipedia</a></li>
+<li><a href="https://waymo.com/waymo-driver/">Self-Driving Car Technology for a Reliable Ride - Waymo Driver</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters expressed deep appreciation for Pandoc and admiration for its longevity. Several noted how the choice of Haskell influenced the project's contributor culture, while others shared practical uses, such as daily Markdown-to-Typst conversion or moving content between Outlook and coding tools. One commenter highlighted the contrast to modern 'vibe-coding' hype, praising Pandoc for being built correctly from basic principles.
+**Discussion**: Commenters expressed a generally positive but measured sentiment, highlighting that Waymo vehicles are predictable and cause fewer incidents than human drivers, especially compared to aggressive LA drivers. One user noted the service's success in DFW despite its low density and car-heavy culture, while another suggested that driverless taxis could serve as an effective affordable housing policy by reducing the need for parking and public transit investment. A few mentioned occasional issues, such as vehicles getting stuck, but overall enthusiasm appears high.
 
-**Tags**: `#pandoc`, `#document-conversion`, `#haskell`, `#open-source`, `#software-engineering`
+**Tags**: `#autonomous-vehicles`, `#waymo`, `#robotaxi`, `#transportation`, `#policy`
 
 ---
 
 <a id="item-6"></a>
-## [Jane Street's Bonsai lets OCaml developers share types across frontend and backend](https://github.com/janestreet/bonsai) ⭐️ 8.0/10
+## [FedEx's Phish-Like Emails Erode User Trust, Says Troy Hunt](https://www.troyhunt.com/thanks-fedex-this-is-why-we-keep-getting-phished/) ⭐️ 8.0/10
 
-Bonsai is Jane Street's open-source UI library for building reactive web applications in OCaml, compiled to JavaScript via Js_of_ocaml. It allows developers to use the same OCaml language and types on both the backend and frontend. It addresses the long-standing challenge of sharing code and types between server and client in OCaml, potentially making OCaml more attractive for full-stack web development. Since Jane Street uses Bonsai for almost all of its internal web applications, the library serves as a battle-tested reference for the wider OCaml ecosystem. Bonsai is partly inspired by Elm and compiles OCaml to JavaScript via Js_of_ocaml, rather than relying on the JavaScript framework ecosystem. The GitHub repository's docs directory appears to be missing, breaking links to guides; one commenter also expressed uncertainty about whether Bonsai updates the DOM directly or uses a diffing algorithm.
+In a 2024 blog post, security researcher Troy Hunt documents how legitimate FedEx notification emails mirror the hallmarks of phishing attacks, such as unexpected requests and dubious-looking links. He argues that such confusing yet authentic messages train users to ignore red flags, making real phishing attempts harder to spot. This matters because major brands' own messaging practices undermine security awareness and make users more susceptible to genuine phishing and social engineering attacks. It highlights a systemic problem: even well-meaning companies erode the very cues that help people distinguish legitimate communications from malicious ones. The post references real-world examples from commenters, including FedEx customs notices sent from individual employees with PDF attachments and Google storage alerts that use the c.gle link shortener. These cases show that even security-savvy users struggle to validate suspicious-looking but legitimate communications.
 
-hackernews · KolmogorovComp · Aug 3, 08:29 · [Discussion](https://news.ycombinator.com/item?id=49152842)
+hackernews · stymaar · Aug 4, 21:09 · [Discussion](https://news.ycombinator.com/item?id=49175192)
 
-**Background**: OCaml is a general-purpose, high-level, multi-paradigm programming language created in 1996 and maintained by Inria, with uses in static analysis, formal methods, systems programming, and web development. Bonsai builds on js_of_ocaml, a compiler that translates OCaml bytecode to JavaScript, enabling OCaml programs to run in browsers and Node.js. By providing an Elm-inspired reactive model, Bonsai allows Jane Street to write UI logic in the same language as its backend services.
+**Background**: Email spoofing and phishing exploit the lack of built-in authentication in original email protocols, allowing attackers to forge sender addresses and impersonate trusted brands. Social engineering attacks rely on psychological manipulation, often using urgency, fear, or familiarity to prompt victims into clicking malicious links or divulging credentials. When legitimate companies send poorly designed emails that mimic these attack patterns, they inadvertently desensitize users to warning signs.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/janestreet/bonsai">GitHub - janestreet/bonsai: A library for building dynamic webapps, using Js_of_ocaml · GitHub</a></li>
-<li><a href="https://en.wikipedia.org/wiki/OCaml">OCaml - Wikipedia</a></li>
-<li><a href="https://numfer.com/ocsigen/js_of_ocaml">Js _ of _ ocaml : OCaml to JavaScript Compiler</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Email_spoofing">Email spoofing</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Social_engineering_(security)">Social engineering (security) - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters were generally positive, with one saying shared backend/frontend types are "finally possible" and another linking to a Jane Street Signals and Threads podcast episode about building the UI framework. Some raised aesthetic concerns, compared Bonsai to Melange (used by Ahrefs and other OCaml shops), and asked whether it sacrifices the JS ecosystem; others noted the missing docs and questioned the DOM update mechanism.
+**Discussion**: Commenters shared personal experiences illustrating the confusion Hunt describes: one described a FedEx customs email from an individual employee that turned out to be real, while another questioned the validity of a Google c.gle link. Others noted that the proliferation of new top-level domains and shared voice assistants used by both scammers and legitimate institutions make it even harder for non-experts to judge authenticity.
 
-**Tags**: `#OCaml`, `#UI framework`, `#Jane Street`, `#functional programming`, `#web development`
+**Tags**: `#phishing`, `#email security`, `#security awareness`, `#social engineering`
 
 ---
 
 <a id="item-7"></a>
-## [SemiAnalysis Deep-Dives Kimi K3's Novel Architecture](https://newsletter.semianalysis.com/p/kimi-k3-the-manos-the-mythos-the) ⭐️ 8.0/10
+## [Optimizing the Harness Around LLM Agents for Self-Improvement](https://lilianweng.github.io/posts/2026-07-04-harness/) ⭐️ 8.0/10
 
-SemiAnalysis published a detailed technical breakdown of Kimi K3, revealing its compressed attention (Kimi Delta Attention), attention across depth, and latent expert routing (LatentMoE). The article also analyzes K3's inference performance and memory footprint. Kimi K3's design could meaningfully reduce the memory and compute costs of running large language models, especially for long contexts and on-device inference. The breakdown gives practitioners insight into where frontier LLM architecture is heading. Kimi Delta Attention is a compressed attention mechanism similar in spirit to Multi-head Latent Attention (MLA) and aggressively cuts the per-token KV cache footprint. In Stable LatentMoE, tokens are compressed before expert dispatch and decompressed after aggregation, with an RMSNorm applied before the up-projection; a C-based implementation even streams expert weights from NVMe to run on 8GB RAM.
+Lilian Weng published a blog post on harness engineering, arguing that optimizing the external scaffolding around LLM agents—tools, prompts, and context—can significantly boost performance, quality, and cost efficiency. The post introduces the idea of agents self-improving their own harnesses rather than relying solely on model weights. Harness engineering is emerging as a distinct performance lever alongside model weights; the same model can show up to a 6× performance gap under different harnesses. Automating harness optimization could reduce manual engineering effort and make production agents more reliable and cost-effective, affecting AI researchers and engineers building LLM-based systems. Recent work like Meta-Harness treats the harness as an end-to-end optimizable space, using full execution traces rather than compressed summaries to achieve much better results (median scores of 50.0 vs 34.9). Community experiments show that auto-research can shrink a context-loading process from 20k tokens across 15 tool calls to 800 tokens in a single tool call.
 
-rss · Semianalysis · Aug 3, 19:42
+hackernews · tosh · Aug 4, 06:17 · [Discussion](https://news.ycombinator.com/item?id=49164896)
 
-**Background**: Large language models face a memory bottleneck during inference because the key-value cache grows with context length, and mixture-of-experts (MoE) models are heavy due to many expert weights. LatentMoE addresses this by decoupling the routing/expert dimension from the hidden dimension and projecting tokens into a lower-dimensional latent space before expert processing. Attention across depth, such as mixture-of-depths attention, lets attention heads read keys/values from preceding layers, which can reduce the hidden-size bottleneck and improve training efficiency.
+**Background**: In LLM agent systems, the 'harness' refers to the external execution support structure around the model—the code that determines what information to store, retrieve, and present to the model, including prompts, tool interfaces, planning artifacts, verification loops, memory systems, and sandboxes. Harnesses have traditionally been hand-crafted, but recent research positions them as a separate, optimizable performance lever that complements base model capability. Lilian Weng's post is part of this growing focus on harness engineering as a discipline.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://newsletter.semianalysis.com/p/kimi-k3-the-manos-the-mythos-the">Kimi K3: The Manos, The Mythos, The Legendos</a></li>
-<li><a href="https://wan27.org/blog/kimi-k3-vram-guide">Kimi K3 VRAM Requirements: How Much Memory You Actually Need to Run K3 | Wan 2.7</a></li>
-<li><a href="https://securityonline.info/kimi-k3-in-c/">Running Kimi K3 in C: Local AI Inference on 8GB RAM</a></li>
+<li><a href="https://arxiv.org/abs/2603.28052">Meta-Harness: End-to-End Optimization of Model Harnesses (PDF) Advanced Optimization Techniques For Large Language ... Meta-Harness: End-to-End Optimization of Model Harnesses Agentic Harness: Code-Driven LLM Optimization LLM Model Optimization Techniques and Frameworks Meta-Harness — automatically optimizing the code around the LLM GitHub - ai-boost/awesome-harness-engineering: Awesome list ...</a></li>
+<li><a href="https://www.preprints.org/manuscript/202606.2203">Harness Engineering for LLM Agents : A Survey of... | Preprints.org</a></li>
+<li><a href="https://zendevy.com/en/ai/harness-engineering-prompt-context-evolution/">Harness Engineering : From Prompts to Runtime Control — ZenDevy</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI/ML`, `#Architecture`, `#Inference`, `#Memory`, `#Language Models`
+**Discussion**: The Hacker News discussion is largely positive and forward-looking. Commenters propose practical approaches such as building generic fitness functions for codebases and using auto-research over execution traces to find and fix issues, and some speculate about harnesses generating their own RLHF/DPO training sets. Others share personal projects or make humorous remarks, like the 'quest for Torment Nexus' comment.
+
+**Tags**: `#AI agents`, `#LLMs`, `#harness engineering`, `#optimization`
 
 ---
 
 <a id="item-8"></a>
-## [Qwen3.8-Max, a 2.4T Open-Weight Model, Matches Rivals and Excels at Coding](https://www.reddit.com/r/LocalLLaMA/comments/1vellf2/qwen38max_matches_kimi_k3_and_deepseek_v4_flash/) ⭐️ 8.0/10
+## [MiniMax-H3 Omni-Modal Model Runs Locally on Apple Silicon via MLX](https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything) ⭐️ 8.0/10
 
-Qwen3.8-Max, a 2.4-trillion-parameter open-weight model, was announced with benchmark performance closely matching Kimi K3 and DeepSeek V4 Flash, while beating them in coding and software tasks. The model's weights are scheduled to be released next week. The release adds a highly capable open-weight model to the ecosystem, giving developers and enterprises a competitive alternative to major proprietary models at relatively low API prices. It could also intensify competition in coding-focused AI and accelerate adoption of open-weight technologies. The API pricing is $2.0 per million input tokens, $6.0 per million output tokens, and $0.25 per million tokens for implicit caching. A smaller Qwen3.8-27B model is also expected to become open weight soon.
+MiniMax released MiniMax-H3, an omni-modal generative model handling text, images, audio, and video. Simon Willison demonstrated a new MLX port (PipeNetwork/minimax-h3-mlx) that runs it on Apple Silicon, generating a 15-second video clip from a text prompt on his M5 Max MacBook Pro. This is significant because it brings a state-of-the-art omni-modal model — text, image, audio, and video input/output — to consumer Apple hardware, not just cloud APIs. It lowers the barrier for local multimodal experimentation and highlights MLX's growing role in the AI ecosystem. Running the model requires downloading roughly 115 GB of model files; in Willison's test, generating one video took just under 45 minutes. The audio output was described as 'weird speech-like garbage' without prompt guidance, and MiniMax provides a prompting guide for better results.
 
-reddit · r/LocalLLaMA · /u/davidthesong · Aug 3, 18:25
+rss · Simon Willison · Aug 4, 19:10
 
-**Background**: Open-weight models are AI models whose core components are publicly released, allowing anyone to download, inspect, modify, and run them on their own infrastructure, although they usually do not include training code or the full training dataset. In LLM API pricing, implicit caching automatically applies a discount when repeated prompt prefixes are reused, helping to lower input costs. Qwen is an open-weight model family from Alibaba, and this announcement reflects the growing trend of extremely large open models matching closed-market competitors.
+**Background**: An omni-modal model is a single AI architecture that can perceive and generate across multiple modalities — text, images, audio, and video — within a shared latent space, unlike systems that stitch together separate models. MLX is Apple's open-source array and machine-learning framework designed specifically for Apple Silicon, offering familiar Python APIs and efficient local inference. This port converts MiniMax-H3's weights into the MLX format, enabling developers to run a large multimodal generative model on Macs.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://hai.stanford.edu/ai-definitions/what-is-an-open-weight-model">What is an Open-Weight Model? - Stanford HAI</a></li>
-<li><a href="https://opensource.org/ai/open-weights">Open Weights: not quite what you’ve been told</a></li>
-<li><a href="https://www.digitalapplied.com/blog/prompt-caching-2026-cut-llm-costs-engineering-guide">Prompt Caching in 2026: Cut LLM Costs, Keep Quality</a></li>
+<li><a href="https://opensource.apple.com/projects/mlx/">Apple Open Source</a></li>
+<li><a href="https://www.nvidia.com/en-us/glossary/omni-model/">What’s an Omni-Model? Definition, Uses, and Benefits | NVIDIA Glossary</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#LLM`, `#open-weight`, `#Qwen`, `#benchmarks`
+**Tags**: `#MLX`, `#MiniMax`, `#omni-modal`, `#video generation`, `#Apple Silicon`
 
 ---
 
 <a id="item-9"></a>
-## [DeepSeek V4-Flash 284B runs at 33 tok/s on 2× RTX 3090 and used Xeon](https://www.reddit.com/r/LocalLLaMA/comments/1veow4b/deepseek_v4flash_284b_moe_at_33_toks_single_68/) ⭐️ 8.0/10
+## [White House Finalizes AI Evaluation Framework Behind Closed Doors](https://www.axios.com/2026/08/03/white-house-finalizes-ai-framework-behind-closed-doors) ⭐️ 8.0/10
 
-A user ran the full official DeepSeek V4-Flash-0731 checkpoint (284B total / 13B active MoE, 156 GB) on a used Dell R940 quad-Xeon DDR4 server with 2× RTX 3090s, achieving 33 tok/s single-stream and up to 68 tok/s aggregate decode. The setup uses a vLLM fork (Lvllmds4-x v2.3.8) with the lk_moe v2.3.1 CPU-GPU hybrid engine and DSpark speculative decoding, without any re-quantization. This shows a frontier-class 284B MoE model can serve at usable speeds on roughly $6K of commodity used hardware, rather than requiring a $4K+ unified-memory workstation or expensive datacenter GPUs. It also provides rare prefill/decode numbers for Ampere (sm_86) GPUs running a Blackwell-era checkpoint, which is valuable for the local inference community. The routed experts (~96% of params) natively ship in MXFP4 and are streamed from 768 GB DDR4 by 96 Xeon cores, while FP8 linears run weight-only via Marlin kernels because Ampere lacks native FP8/FP4 compute. Resource usage is ~170 GB system RAM and 6.6 GB VRAM per card; the box draws ~1,000 W under decode, with GPUs only at ~136-145 W. Single-stream decode hits 33 tok/s, while 4 concurrent users get 53-68 tok/s aggregate; comparable ik_llama.cpp hybrid gives 12.2 tok/s single-stream.
+The White House announced on August 3 that it has completed a voluntary evaluation framework for advanced AI models, as required by a June 2 executive order, but declined to disclose the framework's contents, reviewer list, or rollout timeline. Companies can grant government access up to 30 days before public release. This framework could become a de facto pre-release review mechanism for frontier AI models, affecting major developers like OpenAI, Google, and Anthropic. Its classified details raise transparency concerns but signal that AI regulation is advancing through administrative channels. The framework specifies requirements for confidentiality, cybersecurity, intellectual property protection, and non-disclosure agreements, and will list 'trusted partners' eligible for early access. The executive order classifies model capability benchmark tests and applicable thresholds as confidential.
 
-reddit · r/LocalLLaMA · /u/AbbreviationsSad5582 · Aug 3, 20:25
+telegram · zaihuapd · Aug 4, 02:31
 
-**Background**: DeepSeek V4-Flash is a Mixture-of-Experts (MoE) model with 284B total parameters but only 13B activated per token, so a CPU can stream inactive experts from system memory while the GPU only handles the active ones. LLM inference has two phases: prefill (processing the prompt in parallel) and decode (generating tokens one by one), and hybrid CPU-GPU setups often only report decode numbers. DSpark speculative decoding uses 5 draft tokens to boost single-stream speeds.
+**Background**: Voluntary AI evaluation frameworks are standardized test suites used to measure model capabilities and risks before deployment. The White House's June 2 executive order required such a framework to be developed, and the administration has been consulting industry partners beyond Anthropic, OpenAI, and Google.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash">deepseek -ai/ DeepSeek - V 4 - Flash · Hugging Face</a></li>
-<li><a href="https://ollama.com/library/deepseek-v4-flash">deepseek - v 4 - flash</a></li>
-<li><a href="https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/">Mastering LLM Techniques: Inference Optimization | NVIDIA Technical...</a></li>
+<li><a href="https://www.linkedin.com/posts/ainewswire_google-stax-aims-to-make-ai-model-evaluation-activity-7378790904440074240-WwQs">Google launches Stax, a customizable AI evaluation framework for...</a></li>
+<li><a href="https://epoch.ai/benchmarks">Data on AI Capabilities and Benchmarking | Epoch AI</a></li>
+<li><a href="https://www.codesota.com/tasks">Every AI Capability — Benchmark Evidence and Trust | CodeSOTA</a></li>
 
 </ul>
 </details>
 
-**Discussion**: A commenter criticized the original post for reporting only decode and not prefill, a common issue with hybrid CPU-GPU benchmarks; the author acknowledged this and added prefill results, noting the prefill number determines what the hardware is actually good for. The discussion reflects a community demand for more complete and honest benchmarking.
-
-**Tags**: `#LocalLLM`, `#DeepSeek`, `#AI Inference`, `#Hardware`, `#MoE`
+**Tags**: `#AI政策`, `#模型评估`, `#白宫`, `#监管`, `#AI安全`
 
 ---
 
 <a id="item-10"></a>
-## [ASU Researchers Unlock NVIDIA CMP 170HX Miners to 80GB VRAM, Prices Surge](https://finance.sina.com.cn/tech/roll/2026-08-03/doc-inikzqsf4659769.shtml) ⭐️ 8.0/10
+## [Huawei Presents Tau Scaling Law to Replace Geometric Scaling in Semiconductors](https://t.me/zaihuapd/42966) ⭐️ 8.0/10
 
-Researchers at Arizona State University publicly disclosed a method to unlock NVIDIA CMP 170HX mining GPUs, expanding VRAM up to 80GB and boosting FP32 compute from 0.39 to 94 TFLOPS. The exploit quickly caused secondary-market prices to jump from 300-500 yuan to 3000-4000 yuan, with overseas listings reaching as high as $1500. This breakthrough turns a cheap, heavily locked mining card into a powerful AI accelerator, democratizing access to high-end compute for AI researchers, hobbyists, and small startups. It also challenges NVIDIA's hardware-enforced product segmentation and could disrupt the resale market for mining GPUs. The unlock exploits a stack overflow vulnerability in the Falcon security coprocessor to bypass NVIDIA's one-time programmable (OTP) fuse locks and modify hardware registers. Unlocked cards can run AI image generation and large language model inference on Windows and Linux, but long-term stability and maximum unlock capacity vary between different card batches.
+At the 2026 International Symposium on Circuits and Systems in Shanghai, Huawei presented the Tau (τ) Scaling Law, proposing time scaling as a new semiconductor evolution principle. Huawei says it has designed and mass-produced 381 chips under this law over the past six years, and will release a new Kirin phone chip using logic folding this autumn. If validated, Tau Scaling could extend semiconductor progress beyond Moore's Law's physical limits without relying on the most advanced lithography, affecting the entire chip industry. It is especially significant for Huawei and China, offering an alternative path to advanced chip density and system performance amid export controls. The law works by systematically reducing a characteristic time constant (τ) across device, circuit, chip, and system levels via Huawei's 'LogicFolding' multi-level co-optimization. Huawei expects high-end chips based on the law to reach transistor density equivalent to a 1.4nm process by 2031, and says it will pursue open cooperation.
 
-telegram · zaihuapd · Aug 3, 11:29
+telegram · zaihuapd · Aug 4, 08:04
 
-**Background**: NVIDIA CMP 170HX is a cryptocurrency mining GPU launched in 2021, built around the same GA100 die as the A100 data-center accelerator. At the factory, one-time programmable (OTP) fuses permanently limited its memory, compute, and PCIe capabilities, and the cards were long considered impossible to reconfigure. Community projects have shown that with custom drivers and careful bypassing of these fuse limits, the card can be transformed into a usable AI accelerator.
+**Background**: Moore's Law, the decades-old observation that transistor density roughly doubles every two years, is approaching physical limits as pure dimensional shrinking yields diminishing returns. Geometric scaling traditionally meant shrinking feature sizes; time scaling instead reduces the time constant that governs how fast devices switch, targeting multiple layers of the electronic stack to improve density, power efficiency, and performance. The Tau Scaling Law was presented at the 2026 IEEE ISCAS, and related theory has been published on ChinaXiv.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://gist.github.com/luqiu732/93b54226ccb45ac0b9504b1f87d8cd11">GA100 Fuse & Register Reference Table — Full Ampere Lineup...</a></li>
-<li><a href="https://ai-manual.ru/article/cmp-170hx-kak-gpu-dlya-ai-razblokirovka-64-gb-hbm2e-i-173-tflops-v-bf16/">CMP 170 HX как GPU для AI: разблокировка 64 ГБ... | AiManual</a></li>
+<li><a href="https://www.huawei.com/en/news/2026/5/ieee-iscas-tau-scaling">HUAWEI Presents the Tau (τ) Scaling Law, Enabling Breakthroughs in Transistor Density and System Performance - Huawei</a></li>
+<li><a href="https://www.globaltimes.cn/page/202605/1361841.shtml">Huawei unveils new semiconductor law, charting fresh path for industry development - Global Times</a></li>
+<li><a href="https://chinarxiv.org/items/chinaxiv-202605.00224">A Time Scaling Theory for Multi-Layer Electronic Systems</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#hardware hacking`, `#GPU`, `#AI`, `#security`, `#NVIDIA`
+**Tags**: `#semiconductors`, `#Huawei`, `#Moore's Law`, `#chip design`, `#hardware innovation`
 
 ---
 
 <a id="item-11"></a>
-## [Apple Photos faces $325B class action over facial data in Illinois](https://appleinsider.com/articles/26/08/03/apple-photos-facial-features-prompt-a-325b-class-action-lawsuit) ⭐️ 8.0/10
+## [Cloudflare Ditches Third-Party Security Tools, Uses $58/Month AI for Bug Bounty Triage](https://www.theregister.com/security/2026/08/04/cloudflare-has-mostly-ditched-third-party-security-tools-suggests-not-trying-that-at-home/5282600) ⭐️ 8.0/10
 
-On June 30, the Seventh Circuit Court of Appeals denied Apple's appeal, allowing a class action lawsuit to proceed that accuses Apple Photos of collecting facial data without consent under Illinois' Biometric Information Privacy Act (BIPA). The suit seeks up to $325 billion in damages on behalf of estimated 6.5 million Illinois residents. This is one of the largest biometric privacy lawsuits ever filed, with potential damages that could dwarf Apple's annual revenue. The outcome could set a landmark precedent for how BIPA applies to consumer software features like photo management, affecting both tech giants and millions of users nationwide. The lawsuit alleges that Apple Photos uses facial recognition to scan people in photos, generates 'face features' for each person, and syncs this data via iCloud. Apple had argued the process does not constitute a biometric identifier and that privacy protections exist, but the judge ruled the class met certification requirements, and the appeals court upheld that decision on June 30.
+Cloudflare's CSO Grant Bourzikas disclosed at a Sydney event that the company now automates bug bounty triage with Anthropic's Claude Sonnet, costing only $58 per month, whereas a specialized security model would cost about $200,000 per month. The company has also built over 200 autonomous security agents and mostly replaced third-party security tools with internally developed applications. This is significant because it shows a major tech company operationalizing AI agents and frontier models for core security workflows at dramatically lower cost, potentially reshaping how security operations are staffed and tooled. It also signals a broader industry shift toward AI-driven automation, with implications for security vendors and security teams' roles. Bourzikas explicitly cautioned other organizations not to imitate Cloudflare's approach, noting that not every bank should build all its own software. Additionally, Cloudflare's chief strategy officer Stephanie Cohen linked the company's earlier layoffs of 1,100 people to AI-driven automation and revealed plans to act as an intermediary between AI companies and publishers using micropayments for content.
 
-telegram · zaihuapd · Aug 3, 14:33
+telegram · zaihuapd · Aug 4, 09:24
 
-**Background**: Illinois' Biometric Information Privacy Act (BIPA), enacted in 2008, was the first U.S. law to regulate the collection and use of biometric identifiers such as fingerprints and facial scans. BIPA grants private individuals the right to sue for violations, with statutory damages of $1,000 per negligent violation and $5,000 per intentional or reckless violation. Many tech companies, including Google, have faced similar BIPA class actions over photo-tagging features. The act's definition of 'biometric identifier' is central to whether Apple's facial feature data qualifies.
+**Background**: Claude Sonnet is Anthropic's mid-tier large language model, part of a family that includes Haiku (smallest) and Opus (largest). In 2026, Anthropic also released Claude Mythos, a specialized autonomous cybersecurity model capable of discovering and exploiting vulnerabilities, which was made available to select organizations. Cloudflare's use of the cheaper general-purpose Sonnet for bug bounty triage shows that many security tasks do not require the most expensive specialized models. The company's strategy reflects a growing trend where enterprises build custom AI-agent pipelines rather than simply buying off-the-shelf security products.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Biometric_Information_Privacy_Act">Biometric Information Privacy Act - Wikipedia</a></li>
-<li><a href="https://www.mofo.com/resources/insights/240503-getting-bipa-right-biometric-identifiers-must-identify">Getting BIPA Right: Biometric Identifiers Must Identify | Morrison Foerster</a></li>
-<li><a href="https://www.commerciallitigationupdate.com/biometric-backlash-the-rising-wave-of-litigation-under-bipa-and-beyond">Biometric Backlash: The Rising Wave of Litigation Under BIPA and Beyond | Epstein Becker Green</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Claude_Sonnet">Claude Sonnet</a></li>
+<li><a href="https://www.contrastsecurity.com/glossary/mythos-ai">What Is Mythos AI? Autonomous Exploits and AppSec Defense | Contrast Security</a></li>
+<li><a href="https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities">Our evaluation of Claude Mythos Preview’s cyber capabilities | AISI Work</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Apple`, `#Privacy`, `#Biometric Data`, `#Facial Recognition`, `#Lawsuit`
+**Tags**: `#AI`, `#Security`, `#Cloudflare`, `#Automation`, `#Bug Bounty`
+
+---
+
+<a id="item-12"></a>
+## [China approves first mandatory L3/L4 autonomous driving safety standard, effective 2027](https://t.me/zaihuapd/42972) ⭐️ 8.0/10
+
+China's Ministry of Industry and Information Technology (MIIT) has completed the draft of the mandatory national standard 'Safety Requirements for Autonomous Driving Systems of Intelligent Connected Vehicles' and opened it for public comment on June 17. The standard, proposed to take effect on July 1, 2027, is China's first mandatory national standard covering L3 and L4 autonomous driving and introduces a Safety Case mechanism. This marks a regulatory shift from loose, marketing-driven claims to enforceable safety obligations for autonomous driving. Automakers must now systematically prove safety through structured argumentation, which will reshape development, testing, and compliance processes across China's autonomous driving industry. The standard requires companies to adopt a 'claim—argument—evidence' structure in Safety Case files to demonstrate safety across the lifecycle. It also imposes differentiated requirements: L3 systems must address human-machine handover and driver takeover capability monitoring, while L4 systems must handle autonomous risk disposition.
+
+telegram · zaihuapd · Aug 4, 13:06
+
+**Background**: L3 and L4 are levels of driving automation defined by SAE: L3 allows the system to drive under certain conditions but requires the human to take over when asked, while L4 can handle all driving in defined scenarios without human intervention. A Safety Case is a structured, evidence-backed argument used in high-risk industries to demonstrate that a system is acceptably safe, shifting oversight from simple rule-checking to self-certified safety. According to Chinese academician Li Jun, 2026 marks a global inflection point where autonomous driving regulation enters the 'Safety Case era'.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.ithome.com/0/966/272.htm">我国首部 L3/L4 自动驾驶强制性国标公示：2027 年 7 月起正式实施，车...</a></li>
+<li><a href="https://baike.baidu.com/item/Safety+Case/67871945">Safety Case - 百度百科</a></li>
+<li><a href="https://www.sohu.com/a/1040778204_100084983">中国工程院院士李骏：自动驾驶安全进入Safety Case时代</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#autonomous-driving`, `#regulation`, `#safety-standards`, `#China`, `#L3/L4`
 
 ---
