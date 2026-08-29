@@ -5,286 +5,173 @@ date: 2026-08-29
 lang: zh
 ---
 
-> 从 30 条内容中筛选出 12 条重要资讯。
+> 从 25 条内容中筛选出 7 条重要资讯。
 
 ---
 
-1. [GLM-5.3 开源权重模型发布获好评](#item-1) ⭐️ 9.0/10
-2. [Triton 3.8.0 发布，带来聚合类型与 tl.topk 增强](#item-2) ⭐️ 8.0/10
-3. [GUI 应完全支持键盘驱动：无障碍与效率的呼声](#item-3) ⭐️ 8.0/10
-4. [Htmx 4.0 发布，为超媒体驱动的 Web 树立里程碑](#item-4) ⭐️ 8.0/10
-5. [美国将意大利托管集体 A/I 列为全球恐怖分子](#item-5) ⭐️ 8.0/10
-6. [现在，一条漏洞传闻就足以让人找到利用方法](#item-6) ⭐️ 8.0/10
-7. [Luanti 因无根据的 AI 版权通知被 Google Play 下架](#item-7) ⭐️ 8.0/10
-8. [微型潜流 Transformer 在 RP2350 上生成 128x128 人脸图像](#item-8) ⭐️ 8.0/10
-9. [腾讯发布混元 Hy4 Preview，盲测成绩略胜竞品](#item-9) ⭐️ 8.0/10
-10. [长鑫科技 2026 年上半年净利 776 亿元，同比扭亏为盈](#item-10) ⭐️ 8.0/10
-11. [Z.ai 发布 GLM-5.3-Flash：激活参数 18B，价格降为十分之一](#item-11) ⭐️ 8.0/10
-12. [OpenAI 因 SpaceX 收购 Cursor，将于 2026 年 11 月停止提供模型](#item-12) ⭐️ 8.0/10
+1. [腾讯开源发布 Hy4 预览版，具备递归自我改进特性](#item-1) ⭐️ 8.0/10
+2. [三星 PIM 架构深度解析：内存计算为何仍面临挑战](#item-2) ⭐️ 8.0/10
+3. [GrapheneOS 称 Pixel 11 不再支持内存标记（MTE）](#item-3) ⭐️ 8.0/10
+4. [百年历史的 SPC 算法击败现代时间序列异常检测方法](#item-4) ⭐️ 8.0/10
+5. [每小时 LLM 基准测试分析：日间波动是日内波动的 3 倍](#item-5) ⭐️ 8.0/10
+6. [OpenAI 因 SpaceX 收购 Cursor，将于 2026 年 11 月 12 日停止提供模型](#item-6) ⭐️ 8.0/10
+7. [美国国防部将腾讯、宁德时代列入“涉军企业”名单](#item-7) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [GLM-5.3 开源权重模型发布获好评](https://huggingface.co/zai-org/GLM-5.3) ⭐️ 9.0/10
+## [腾讯开源发布 Hy4 预览版，具备递归自我改进特性](https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/) ⭐️ 8.0/10
 
-Z.ai 在 Hugging Face 上以开放权重形式发布了 GLM-5.3，该模型基于与 GLM-5.2 相同的基础模型，所有改进均来自后训练阶段。此次发布重点提升了复杂软件工程和智能体能力。 GLM-5.3 提供了具有竞争力的开源权重模型替代方案，社区反馈强调其性能与效率。此次发布可能加速开源权重模型在实际应用中的采用，并加剧 AI 生态系统的竞争。 GLM-5.3 与 GLM-5.2 使用相同的基础模型，所有性能提升均来自后训练技术而非新的预训练。该模型提供多种量化版本，可用于 llama.cpp、Ollama 和 LM Studio 等工具，并已于 2026 年 8 月 14 日发布。
+腾讯已发布并开源了 Hy4 预览版，这是新一代大语言模型，总参数 770B、激活参数 49B，上下文窗口超过 100 万 token。它已在 Hugging Face 上可用，并在 OpenRouter 上几天内处理了数万亿 token，显示出强劲的采用势头。 这是大型科技公司的一次重大开源发布，为可获取的 AI 生态做出了贡献。该模型帮助优化自身训练过程的递归自我改进特性，标志着朝着能够加速自身发展的 AI 系统迈出了重要一步。 该模型采用混合专家（MoE）设计，激活参数为 49B。它参与了训练方法、数据策略、评估框架和底层算子的自动化优化，建立了早期递归自我改进循环。
 
-hackernews · jeudesprits · 8月28日 15:20 · [社区讨论](https://news.ycombinator.com/item?id=49479878)
+hackernews · shenli3514 · 8月29日 19:33 · [社区讨论](https://news.ycombinator.com/item?id=49492632)
 
-**背景**: 开源权重模型是指核心参数公开发布的 AI 模型，任何人都可以下载、微调和部署。Z.ai 的 GLM 系列以提供高性能的开源权重大语言模型而闻名。后训练是指在初始预训练之后应用的技术，如监督微调和强化学习，以优化模型行为和能力。
+**背景**: Hy4 预览版是腾讯继 Hy3 之后的最新大语言模型，专注于编程、研究和智能体任务中的强大性能。递归自我改进是一个概念，即 AI 系统帮助改进创建更强大自身版本的过程，这是有关 AI 加速讨论中的关键想法。腾讯正在与 CodeBuddy 和 WorkBuddy 等产品共同设计该模型，以确保实际应用收益。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://docs.z.ai/guides/llm/glm-5.3">GLM - 5 . 3 - Overview - Z.AI DEVELOPER DOCUMENT</a></li>
-<li><a href="https://kie.ai/blog/what-is-glm-5-3">What Is GLM - 5 . 3 ? Z.ai's Next Open-Weight Model</a></li>
-<li><a href="https://huggingface.co/zai-org/GLM-5.3">zai-org/ GLM - 5 . 3 · Hugging Face</a></li>
+<li><a href="https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/">Tencent Releases and Open-Sources Tencent Hy4 preview - Tencent</a></li>
+<li><a href="https://huggingface.co/tencent/Hy4-preview">tencent/Hy4-preview · Hugging Face</a></li>
+<li><a href="https://shattered.io/tencent-hy4-preview-770b-2026/">Tencent Hy4 Preview: 770B Params, 1M-Token AI Model</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: Hacker News 上的评论者称赞了 GLM-5.3 的性能和效率，有人指出它在处理复杂问题方面优于 DeepSeek Flash 等类似模型。其他人则强调其实用优势，如资源需求更低、定价更有竞争力，还有人将其输出质量与 Opus 4.8 等专有模型相媲美。
+**社区讨论**: 社区评论观点不一。一些用户批评性能图表的表现方式，而另一些用户则强调 Hy4 在 OpenRouter 上的惊人采用度，几天内处理了数万亿 token，并且 5% 的缓存成本极具性价比。有用户发现 Hy3 作为通用智能体模型表现优异，接近 DeepSeek 的行为；递归自我改进循环也引发了哲学层面的讨论。
 
-**标签**: `#AI/ML`, `#open-weights`, `#large-language-model`, `#release`, `#GLM`
+**标签**: `#AI`, `#Open Source`, `#Tencent`, `#LLM`, `#Model Release`
 
 ---
 
 <a id="item-2"></a>
-## [Triton 3.8.0 发布，带来聚合类型与 tl.topk 增强](https://github.com/triton-lang/triton/releases/tag/v3.8.0) ⭐️ 8.0/10
+## [三星 PIM 架构深度解析：内存计算为何仍面临挑战](https://chipsandcheese.com/p/hot-chips-2026-samsungs-processing) ⭐️ 8.0/10
 
-Triton v3.8.0 已发布，将 @triton.aggregate 和 @gluon.aggregate 变为公共 API，并为 tl.topk 增加了 descending 参数。该版本还包含多项后端、编译器和基础设施改进。 Triton 是一种广泛使用的类 Python GPU 编程语言，此版本同时提升了开发者的生产效率和编译器功能。聚合类型简化了内核参数传递并提高了可读性，而 topk 的 descending 选项则扩展了其在机器学习和数据处理工作负载中的适用性。 聚合类型支持继承字段、默认值、自动生成的构造函数、不可变实例以及 aggregate_replace() 操作。将 tl.topk 的 descending 设置为 False 可返回最小值而非最大值；其他更改包括修复 GFX950 BF16 错误编译的 LLVM 更新，以及扩展的多 CTA 支持。
+Chips and Cheese 发布了对三星在 Hot Chips 上展示的 Processing-in-Memory（PIM）架构的深度技术评测，分析其设计及其在 AI 工作负载中的适用性。评测探讨了三星如何通过 HBM-PIM 和 LPDDR5-PIM 将计算单元直接集成到 DRAM 中以减少数据搬运。 PIM 直指'内存墙'问题——即处理器速度与内存带宽之间日益扩大的差距——这是需要搬运海量数据的 AI 工作负载的关键瓶颈。如果成功，三星的方案可能重塑 Transformer 等深度学习模型的加速器设计，但其商业影响尚未得到验证。 三星的 HBM-PIM 将处理单元置于高带宽内存（HBM）内部以降低数据搬运能耗，而 LPDDR5-PIM 则面向无需数据中心连接的移动端 AI 推理。该方案最适用于规则、数据并行的计算模式，例如构成 Transformer 模型基础的矩阵乘法。
 
-github · warrendeng · 8月28日 18:25
+hackernews · ingve · 8月29日 06:06 · [社区讨论](https://news.ycombinator.com/item?id=49487341)
 
-**背景**: Triton 是一种使用类 Python 语法编写 GPU 内核的领域专用语言和编译器，常用于深度学习框架。tl.topk 函数传统上返回张量在某个维度上的 k 个最大元素，而新的 descending 参数增加了灵活性。@triton.aggregate 装饰器将此前内部的聚合数据类型正式化，使得向内核传递结构化数据更加方便。
+**背景**: 处理中内存（PIM，也称存内计算 CIM）是一种直接在存储器内部执行数据运算的计算机架构，无需将数据搬运到 CPU 寄存器，这与经典的冯·诺依曼架构不同。在冯·诺依曼机器中，数据在内存与计算单元之间持续往返搬运会造成能量浪费和性能损失，即所谓的'内存墙'问题。三星已连续多年在 Hot Chips 上展示 PIM 研究成果，将其定位为突破片外带宽物理限制并大幅降低数据搬运能耗的途径。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://triton-lang.org/main/python-api/generated/triton.language.topk.html">triton.language. topk — Triton documentation</a></li>
-<li><a href="https://github.com/triton-lang/triton/issues/8781">[Frontend] OOP + aggregate in triton/gluon · Issue #8781 · triton-lang/triton</a></li>
+<li><a href="https://en.wikipedia.org/wiki/In-memory_processing">In-memory processing - Wikipedia</a></li>
+<li><a href="https://www.servethehome.com/samsung-processing-in-memory-technology-at-hot-chips-2023/">Samsung Processing in Memory Technology at Hot Chips 2023</a></li>
+<li><a href="https://www.moya-technology.com/news/162">Samsung HBM- PIM AI accelerator converges logic and memory</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Triton`, `#GPU`, `#Compiler`, `#AI/ML`, `#Release`
+**社区讨论**: 评论者既感兴趣也持怀疑态度：有人指出这一概念早在 1980 年代的 VLSI 教材中就有讨论，而且大多数展会上展示的奇特加速器设计最终都未能进入市场。其他人则认为 PIM 严重约束了软件开发，需要事先知道依赖数据的位置，因此主要适用于 AI、游戏和加密货币这类规律性强的工作负载。还有读者指出，能耗和硅面积的主角是数据搬运而非计算本身，因此该设计必须解决芯片级的数据分发问题，而不仅仅是计算单元的位置。
+
+**标签**: `#Processing-in-Memory`, `#Hardware`, `#AI accelerators`, `#Hot Chips`
 
 ---
 
 <a id="item-3"></a>
-## [GUI 应完全支持键盘驱动：无障碍与效率的呼声](https://ckardaris.com/blog/2026/08/28/keyboard-driven-guis.html) ⭐️ 8.0/10
+## [GrapheneOS 称 Pixel 11 不再支持内存标记（MTE）](https://bsky.app/profile/grapheneos.org/post/3mua32q4ds22e) ⭐️ 8.0/10
 
-这篇博文主张图形用户界面不应只依赖鼠标，而应设计为可以完全通过键盘操作，以提升无障碍性和可用性。该观点在 Hacker News 上引发热议，获得 653 分和 322 条评论，讨论其实现难点与好处。 键盘驱动的 GUI 之所以重要，是因为许多用户（包括行动或视觉障碍者以及高效用户）不使用鼠标导航，不友好的界面会把他们排斥在外。这场讨论促使设计师和框架开发者将键盘导航视为核心需求，而不是事后的补救项。 实现细节包括焦点管理技术（如 roving tabindex）、保持合理的 Tab 顺序，以及避免“键盘陷阱”（用户无法将焦点移出某个控件）。作者和评论者也指出，只有当应用遵循标准的焦点行为时，Tab、方向键和 Enter 才能作为通用的系统级导航方式。
+GrapheneOS 报告称，Google 的 Pixel 11 系列不再支持硬件内存标记（MTE），而此前的 Pixel 机型具备该安全功能。该项目还指出，Pixel 11 相比 Pixel 10 只是 CPU 小幅升级，GPU 不变、内存更小且价格更高。 MTE 是针对内存破坏的关键硬件防御手段，因此移除该功能削弱了 Google 旗舰手机的安全能力。这对注重安全的用户以及依赖硬件特性来加固 Android 的 GrapheneOS 都很重要。 内存标记通过为内存指针分配标签并在运行时检查，在越界访问等问题造成破坏前捕捉内存错误。GrapheneOS 指出 Pixel 11 的改动基本属于增量式提升，而 Pro 基础型号在涨价的同时 RAM 反而减少。
 
-hackernews · ckardaris · 8月28日 15:17 · [社区讨论](https://news.ycombinator.com/item?id=49479837)
+hackernews · 400thecat · 8月29日 15:26 · [社区讨论](https://news.ycombinator.com/item?id=49490702)
 
-**背景**: 键盘无障碍是 Web 和桌面无障碍标准（如 WCAG 的“无键盘陷阱”准则）的核心要求。在菜单、列表框、工具栏等复合控件中，开发者常用 roving tabindex 模式：Tab 顺序中只有一个元素为 tabindex=0，其余元素通过方向键移动焦点。如果焦点管理不细致，自定义控件对仅使用键盘的用户（尤其是依赖屏幕阅读器等辅助技术的用户）将变得无法使用。
+**背景**: GrapheneOS 是一个基于 Android 的开源安全加固操作系统，官方支持 Google Pixel 设备。MTE（内存标记扩展）是 ARM 硬件特性，可缓解内存安全漏洞，而这类漏洞占 Android 漏洞的很大比例。Pixel 一直是 Android 上测试 MTE 的标准平台，因此 Pixel 11 移除该功能是明显的倒退。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.stefanjudis.com/today-i-learned/roving-tabindex/">What's 'roving tabindex'? | Stefan Judis Web Development</a></li>
-<li><a href="https://www.boia.org/blog/why-keyboard-traps-are-one-of-the-most-frustrating-accessibility-issues">Why Keyboard Traps Are One of the Most Frustrating Accessibility ...</a></li>
-<li><a href="https://accessibility-test.org/blog/development/interactive-aria-widgets-implementation-guide-for-developers/">Interactive ARIA Widgets | Implementation Guide for Developers</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GrapheneOS">GrapheneOS</a></li>
+<li><a href="https://havenmessenger.com/blog/posts/memory-tagging-mte-explained/">Memory Tagging ( MTE ): Hardware That Catches Memory Bugs</a></li>
+<li><a href="https://medium.com/@e.blumbergs/memory-tagging-extension-in-2025-what-actually-works-what-kinda-works-and-whats-still-meh-b79a37c4be94">Memory Tagging Extension in 2025 — What Actually Works... | Medium</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者大多支持键盘无障碍，但在程度上存在分歧。一位评论者敦促开发者用屏幕阅读器和键盘测试应用，指出一次错位的 Tab 顺序就可能让残障用户“撞墙”；另一位将忽视键盘支持归咎于流行的 UI 框架。也有反对声音认为，高效用户的需求不等于普通用户体验，强迫所有人都使用键盘驱动 GUI 忽略了普通用户的学习曲线。
+**社区讨论**: 评论者情绪愤怒，称这一决定“令人震惊”和“糟糕的进展”，有人表示将跳过 Pixel 11 或转向 Motorola 设备。有用户称赞 Pixel 9 Pro 是时机合适的购买，另一些人则贬低 Pixel 10 和 11 的硬件决策是“一大坨糟糕透顶的东西”。
 
-**标签**: `#accessibility`, `#keyboard navigation`, `#GUI design`, `#software usability`
+**标签**: `#grapheneos`, `#pixel 11`, `#mte`, `#mobile-security`, `#hardware`
 
 ---
 
 <a id="item-4"></a>
-## [Htmx 4.0 发布，为超媒体驱动的 Web 树立里程碑](https://four.htmx.org/announcements/2026-08-28-htmx-4.0.0-is-released) ⭐️ 8.0/10
+## [百年历史的 SPC 算法击败现代时间序列异常检测方法](https://www.reddit.com/r/MachineLearning/comments/1w1wt1s/you_can_beat_sota_time_series_anomaly_detection/) ⭐️ 8.0/10
 
-Htmx 4.0.0 于 2026 年 8 月 28 日发布，这是面向超媒体的 JavaScript 库的一次重大版本更新。这次发布标志着这个流行的开源项目的重要里程碑。 Htmx 已在希望采用更简单、对服务端渲染友好的前端架构的开发者中获得了广泛采用。这次重大版本发布再次印证了超媒体方法作为复杂单页应用框架可行替代方案的地位。 htmx 是一个体积小（压缩后约 14k）、无依赖的库，可通过 HTML 属性直接使用 AJAX、CSS 过渡、WebSocket 和 Server-Sent Events。4.0 版本包含了 hx-alpine-compat，用于解决与 Alpine.js 的兼容性问题。
+Eamonn Keogh 在 Reddit 上发帖指出，简单的统计过程控制（SPC）在大多数 TSB-AD 基准数据集上都能超越最先进的时间序列异常检测方法，有时甚至取得完美结果。他认为该基准过于简单，并呼吁社区进行反思。 这一批评动摇了被广泛使用的基准的有效性，意味着 NeurIPS、SIGKDD 和 VLDB 上发表的许多结果可能并未反映真正的进展。它可能推动时间序列异常检测社区采用更具挑战性的基准和更严格的评估方法。 Keogh 明确表示他并非批评具体算法，而是批评 TSB-AD 基准本身，包括那些对 SPC 来说过于简单的 ECG 和“TAO”轨迹。他还提到，自己已完成大部分工作，以引入更具挑战性的 TSAD 问题，如雪橇犬、Tuna、燃料电池和智能制造等。
 
-hackernews · rmsaksida · 8月28日 13:28 · [社区讨论](https://news.ycombinator.com/item?id=49478178)
+reddit · r/MachineLearning · /u/eamonnkeogh · 8月29日 20:16
 
-**背景**: htmx 是一个开源 JavaScript 库，通过自定义属性扩展 HTML，让开发者无需编写 JavaScript 即可使用 AJAX、CSS 过渡、WebSocket 和 Server-Sent Events。它体现了超媒体理念，常与 HATEOAS（超媒体作为应用状态引擎）相关联，并作为 intercooler.js 的改进版本而诞生。超媒体是指包含指向其他媒体链接的内容，构成了现代 Web 的基础。
+**背景**: 时间序列异常检测（TSAD）旨在发现按时间排序数据中的异常模式，而 TSB-AD 是一个重要的基准，旨在解决该领域中数据集有缺陷和评估实践不一致的问题。统计过程控制（SPC）是一种经典的质量控制方法，利用控制限（如三西格玛规则）来标记偏离正常行为的点。如果简单的 SPC 规则就能获得接近完美的分数，说明基准中的异常大多只是明显的尖峰或均值漂移，并不需要复杂的学习模型。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://htmx.org/">htmx - high power tools for html</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Htmx">htmx - Wikipedia</a></li>
-<li><a href="https://hypermedia.systems/hypermedia-a-reintroduction/">Hypermedia: A Reintroduction</a></li>
+<li><a href="https://github.com/TheDatumOrg/TSB-AD">thedatumorg/TSB-AD: Time-Series Anomaly Detection - GitHub</a></li>
+<li><a href="https://thedatumorg.github.io/TSB-AD/">TSB-AD - thedatumorg.github.io</a></li>
+<li><a href="https://www.sciencedirect.com/topics/engineering/statistical-process-control">sciencedirect.com/topics/engineering/ statistical - process - control</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区反响总体积极，开发者称赞 htmx 的简单性和使用乐趣，公司 CEO 在评论中披露了自己的身份。一位评论者提出相反观点，认为将表现层与后端逻辑混在一起让 .NET/Angular 开发变得更困难。还有人提到尝试了 Alpine AJAX 等替代方案，并指出 htmx 对 Datastar 等项目的影响。
-
-**标签**: `#htmx`, `#frontend-development`, `#web-development`, `#hypermedia`, `#open-source`
+**标签**: `#Time Series Anomaly Detection`, `#Benchmarking`, `#Machine Learning`, `#Research Critique`
 
 ---
 
 <a id="item-5"></a>
-## [美国将意大利托管集体 A/I 列为全球恐怖分子](https://www.inventati.org/) ⭐️ 8.0/10
+## [每小时 LLM 基准测试分析：日间波动是日内波动的 3 倍](https://www.reddit.com/r/MachineLearning/comments/1w1jp1j/i_analyzed_31352_hourly_llm_benchmark_scores/) ⭐️ 8.0/10
 
-美国国务院将 Autistici/Inventati（A/I 集体）列为“特别指定全球恐怖分子”，该意大利集体运营 autistici.org 和 noblogs.org。此举相当于制裁一家互联网基础设施与托管服务商，据称是此类指定中的首例。 以恐怖主义认定来针对托管和隐私基础设施服务商，为美国施压活动人士所用服务开创了危险先例。这可能对数字权利、言论自由以及更广泛的互联网治理生态产生寒蝉效应，影响从博主到隐私工具开发者等各类人群。 美国国务院声称 A/I 为暴力“反法”（Antifa）小组和极左激进分子构建并运营数字基础设施。A/I 于 2001 年由自治反资本主义运动创立，为活动人士提供邮箱、托管以及基于 WordPress 的匿名博客平台 Noblogs；截至报道时，autistici.org 已无法访问，noblogs.org 部分功能失常。
+一项对 31,352 个每小时 LLM 基准测试分数的分析发现，同一天内性能平均波动 2.8 分，而日间波动达 8.4 分。作者还发布了 AIStupidLevel，这是一套采用 MIT 许可证的开放源代码系统，用于持续监测 LLM 性能漂移。 这表明，单次 LLM 评估无法可靠地检测生产环境中的真实性能退化，因为短期读数往往会被普通的随机噪声主导。生产团队可以利用这一方法来区分真正的模型漂移与随机波动，从而改进对基于 API 的模型的监控。 该研究覆盖了多个提供商的 49 个模型标识符，使用归一化的 0-100 综合评分，每项任务执行五次并聚合结果。检测流程使用每日中位数和顺序变点检测，当前系统实时监控 22 个模型，最近曾标记 Gemini 3.1 Flash Lite 出现 32%的持续性性能下降。
 
-hackernews · exiguus · 8月28日 12:58 · [社区讨论](https://news.ycombinator.com/item?id=49477854)
+reddit · r/MachineLearning · /u/ionutvi · 8月29日 11:08
 
-**背景**: “特别指定全球恐怖分子”（SDGT）是美国的一种制裁工具，用以冻结指定实体的财产并禁止美国人与之交易。Autistici/Inventati 是 2001 年诞生的意大利集体，为草根和社会运动活动人士提供电子邮件、邮件列表和匿名博客等互联网服务。其 Noblogs 平台允许匿名发布且不记录 IP，因此被许多独立博主广泛使用。
+**背景**: LLM 基准测试通常只测量模型在某一时间点的性能，但生产环境中的 API 存在随机波动，因为模型本身具有不确定性，且提供商可能更新模型。持续评估会在同一组一致任务上反复运行，并应用统计方法将正常噪声与有意义的性能漂移区分开来。AIStupidLevel 等工具在标准指标（如延迟和错误率）之外增加了一层可观测性，用于检查模型是否仍能完成当初被选中的工作。在此背景下，“金丝雀任务（canary tasks）”是轻量级、高频率的测试，目的是快速发现性能变化。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.state.gov/releases/office-of-the-spokesperson/2026/08/designation-of-autistici-inventati-as-a-specially-designated-global-terrorist">Designation of Autistici/Inventati as a Specially Designated Global Terrorist - United States Department of State</a></li>
-<li><a href="https://www.autistici.org/about">autistici.org - Who we are</a></li>
-<li><a href="https://noblogs.org/">NoBlogs.org</a></li>
+<li><a href="https://israynotarray.com/en/ai/2026/06/16/aistupidlevel-llm-degradation-monitor/">Is AI Getting Quietly Dumber? AIStupidLevel: A 24-Hour Watchdog for LLM Degradation | Is Ray, Not Array</a></li>
+<li><a href="https://www.turing.com/resources/understanding-llm-evaluation-and-benchmarks">A Complete Guide to LLM Evaluation and Benchmarking</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者意见分歧明显：一些人称这一认定前所未有且令人担忧，质疑 I2P、Monero、Veilid、Tox 或 Signal 的用户和开发者是否会是下一个目标。另一些人提供了历史背景，谈及 A/I 起源于 2001 年热那亚八国集团峰会抗议和 Indymedia；还有人表示对 A/I 到底做什么感到困惑；一位评论者质疑所谓与库尔德工人党（PKK）的联系，称找不到任何 A/I 托管或支持 PKK 内容的证据。
-
-**标签**: `#sanctions`, `#privacy`, `#civil-liberties`, `#hosting`, `#internet-governance`
+**标签**: `#LLM`, `#benchmarking`, `#evaluation`, `#stability analysis`, `#MLOps`
 
 ---
 
 <a id="item-6"></a>
-## [现在，一条漏洞传闻就足以让人找到利用方法](https://anil.recoil.org/notes/rumour-is-the-exploit) ⭐️ 8.0/10
+## [OpenAI 因 SpaceX 收购 Cursor，将于 2026 年 11 月 12 日停止提供模型](https://t.me/zaihuapd/43477) ⭐️ 8.0/10
 
-一篇新文章认为，在 LLM 时代，仅凭一条漏洞传闻就足以快速发现并利用漏洞，从而大大扩展了漏洞利用开发的范围。作者指出，关于漏洞的传闻实际上已成为 AI 辅助漏洞利用的种子。 这一现象意义重大，因为它降低了编写可用漏洞利用代码的技能门槛，并把危险的攻击窗口扩展到了价值较低的目标上。安全团队和开源维护者现在正面临大量 AI 生成的漏洞披露和利用尝试。 这篇文章反映了一个更广泛的趋势，即 LLM 加速了 N-day 漏洞利用的开发，CISA 指出漏洞利用时间已从数月压缩到数小时。维护者也报告了现实影响：rclone 在过去一个月收到 40 多份安全披露，而该项目头十年总共只有约 20 份。
+OpenAI 已宣布将终止向 Cursor 提供 OpenAI 模型的合同，建议停服日期为 2026 年 11 月 12 日。OpenAI 表示，原因在于 SpaceX 收购了 Cursor，并且无法信任马斯克旗下公司会遵守其服务条款。 此事意义重大，因为 Cursor 是最广泛使用的 AI 编程工具之一，切断其 OpenAI 模型供应可能影响开发者并重塑 AI 编程生态。这也加剧了 OpenAI 与马斯克旗下公司之间的对抗，为因所有权与信任问题而终止商业合作开创了先例。 OpenAI 表示将按合同允许的最大通知期提前通知，并列举了马斯克旗下公司的违约记录，包括收购 Twitter 后的涉嫌违约，以及今年早些时候 xAI 在宣誓下承认违反 OpenAI 服务条款。另据公开信息，Cursor 于 2026 年 6 月起被整合并入 SpaceXAI，8 月成为其全资子公司。
 
-hackernews · avsm · 8月28日 15:58 · [社区讨论](https://news.ycombinator.com/item?id=49480466)
+telegram · zaihuapd · 8月29日 04:53
 
-**背景**: 传统漏洞研究需要深入代码分析和人工逆向工程，才能把发现的缺陷变成可用的利用程序。如今 LLM 可以辅助代码理解、补丁分析和利用框架搭建，使这些技术更容易上手。过去需要专家知识才能处理的随口漏洞评论，现在也能快速变成具体探测手段。这改变了网络攻击的成本结构，使得低价值目标的大规模利用成为可能。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://arxiv.org/html/2512.22753">From Rookie to Pro: Social Engineering LLMs for Automated...</a></li>
-<li><a href="https://runtimerebel.com/blog/llm-assisted-exploit-creation-claude-mythos-accelerates-n-day-attacks">LLM - Assisted Exploit Creation: Claude Mythos... | RuntimeRebel</a></li>
-<li><a href="https://me.aiyu.co.in/blogs/how-frontier-llms-are-accelerating-nday-exploit-development">Aiyu | How Frontier LLMs Are Accelerating N‑Day Exploit Development</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 维护者和安全研究人员大体认同文章观点，但也增加了更多细节：rclone 维护者表示披露数量令人应接不暇，但约 75%的披露有值得调查的内容。还有人指出，问题不仅在于发现漏洞，还在于部署和修补的速度；也有人认为这种做法在 LLM 出现之前就存在，只是现在被规模化并普及了。
-
-**标签**: `#security`, `#LLM`, `#vulnerability research`, `#open source`, `#exploit development`
-
----
-
-<a id="item-7"></a>
-## [Luanti 因无根据的 AI 版权通知被 Google Play 下架](https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai/) ⭐️ 8.0/10
-
-2026 年 8 月 27 日，Luanti 项目宣布，其开源体素游戏引擎因 Tracer AI 提交的一份貌似无根据的 AI 生成 DMCA 通知而被 Google Play 下架。该项目正在对下架提出申诉。 这一事件表明，AI 生成的 DMCA 通知几乎无需核实就能让热门开源项目从主要分发平台下架，威胁依赖应用商店的开发者。它也为要求改革 DMCA 的呼声增添了动力，例如对恶意下架行为进行处罚。 社区成员指出，Tracer AI 曾在 2023 年向 Luanti 发出过类似通知并被成功申诉，今年还针对独立游戏 Allumeria 发出类似通知。评论者还注意到，最新通知声称适用瓦努阿图司法管辖区，而之前的通知声称适用美国，这让人质疑通知是否具有欺诈性。
-
-hackernews · miniBill · 8月28日 06:33 · [社区讨论](https://news.ycombinator.com/item?id=49475079)
-
-**背景**: Luanti（原名 Minetest）是一个由社区驱动的自由开源体素游戏引擎，自 2010 年开始开发，允许用户通过 Lua 脚本和内置的 ContentDB 浏览器创建和定制沙盒游戏。DMCA 下架通知是移除涉嫌侵权内容的法律请求，但 AI 工具如今可以大规模生成看似可信的通知，滥用者会利用它们进行审查、骚扰或打击竞争对手，即使实际上并不存在侵权行为。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Luanti">Luanti</a></li>
-<li><a href="https://www.xbiz.com/features/291975/fighting-back-against-ai-fueled-fake-takedown-notices">Fighting Back Against AI -Fueled Fake Takedown Notices - XBIZ.com</a></li>
-<li><a href="https://isthisscam.app/ai-generated-dmca">AI - generated DMCA notices : how to spot the fakes</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 评论者普遍同情 Luanti 并谴责该通知。有人提出具体改进方案，例如提交下架请求前需缴纳保证金；也有人指出 Tracer AI 屡次发送此类通知，且在瓦努阿图与美国司法管辖声明之间不一致，并建议对轻率的 DMCA 提交进行处罚。
-
-**标签**: `#DMCA`, `#open-source`, `#AI-copyright`, `#Google Play`, `#software-licensing`
-
----
-
-<a id="item-8"></a>
-## [微型潜流 Transformer 在 RP2350 上生成 128x128 人脸图像](https://www.reddit.com/r/MachineLearning/comments/1w10tax/i_implemented_a_very_tiny_image_generation_model/) ⭐️ 8.0/10
-
-开发者（u/cpldcpu）在 RP2350 微控制器上实现了一个 240 万至 400 万参数的潜流 Transformer 图像生成模型，经 int8 量化后可在约 20 秒内生成 128x128 的人脸图像。该模型完全在芯片上运行，生成的图像可以显示在显示器上或通过 USB 传输。 这表明传统上需要大型 GPU 的生成式图像模型可以被压缩到低成本、低功耗的微控制器中。它为设备端图像生成、隐私保护式生成或嵌入式创意设备等实用边缘 AI 应用打开了可能性，并可能激励更多微控制器级别的扩散/流模型。 该模型有 12 层，采用 AdaLN-Zero 条件化机制，并支持无分类器引导（CFG），显著提升了生成质量。为了适配内存，推理引擎在计算上一层的同时通过 DMA 从闪存流式读取权重；此外，ReLU²激活函数产生的稀疏性被引擎利用来跳过部分计算。
-
-reddit · r/MachineLearning · /u/cpldcpu · 8月28日 19:48
-
-**背景**: RP2350 是一款小型低功耗微控制器，内存非常有限且没有 GPU，因此在其上运行神经网络需要激进的压缩与流式处理技术。潜流 Transformer 将流匹配（一种学习把随机噪声转化为数据的方法）与在压缩潜空间而非原始像素上运行的 Transformer 层相结合。int8 量化把每个权重打包成 8 位整数，与 32 位浮点数相比可将内存占用减少约四倍。AdaLN-Zero 是扩散/流 Transformer 中常用的一种条件化设计，用于注入类别标签或引导强度等控制信号，同时保持训练稳定。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.emergentmind.com/topics/latent-flow-transformers-lft">Latent Flow Transformers (LFT)</a></li>
-<li><a href="https://www.emergentmind.com/topics/adaln-zero-conditioning">AdaLN - Zero Conditioning in Deep Models</a></li>
-<li><a href="https://www.vietanh.dev/glossary/squared-relu">What is: Squared ReLU ? | Viet-Anh on Software</a></li>
-
-</ul>
-</details>
-
-**标签**: `#microcontrollers`, `#image generation`, `#edge AI`, `#transformers`, `#quantization`
-
----
-
-<a id="item-9"></a>
-## [腾讯发布混元 Hy4 Preview，盲测成绩略胜竞品](https://mp.weixin.qq.com/s/ymr3X878B8oa2XP15CH8TQ) ⭐️ 8.0/10
-
-2026 年 8 月 28 日，腾讯发布了迄今最强的开源模型 Hy4 preview，拥有 770B 总参数、49B 活跃参数和 1M token 的上下文窗口。在 203 个工程任务的盲评中，Hy4 preview 以 2.99 分略胜 GLM 5.3（2.92）与 Kimi K3（2.94）。 这是中国科技巨头腾讯发布的重要开源模型，展现了与领先模型相当的性能，并提供超大上下文窗口。这可能给竞争对手带来压力，同时为开发者提供一个高性能、开放权重的新选择，适用于软件工程、科学研究等长上下文任务。 该模型采用混合专家（MoE）架构，总参数量达 770B，但每个 token 仅激活 49B 参数，在能力与效率之间取得平衡。目前已上线腾讯云、GitHub、HuggingFace、ModelScope、AtomGit 和 OpenRouter 等平台，API 定价为输入每 1M tokens 0.834 美元、输出每 1M tokens 2.501 美元。
-
-telegram · zaihuapd · 8月28日 06:11
-
-**背景**: 混合专家（MoE）架构将模型拆分为多个专门的“专家”子网络，并通过路由器为每个 token 仅激活其中一小部分。这使模型既能拥有很高的总参数量以实现更强的能力，又能让推理成本更接近活跃参数量。盲评是指在不告知评分者输出来自哪个模型的情况下进行打分，从而减少比较中的偏差。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mixture-of-experts">A Visual Guide to Mixture of Experts (MoE)</a></li>
-<li><a href="https://www.mindstudio.ai/blog/mixture-of-experts-architecture-glm-5-2-active-parameters">Mixture of Experts Architecture Explained: How GLM... | MindStudio</a></li>
-<li><a href="https://medium.com/john-snow-labs/blind-testing-for-llm-evaluation-71cc5a936db9">Generative AI Lab 7.6: Blind Testing for LLM Evaluation | Medium</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI`, `#large language models`, `#open-source`, `#Tencent`, `#model release`
-
----
-
-<a id="item-10"></a>
-## [长鑫科技 2026 年上半年净利 776 亿元，同比扭亏为盈](https://t.me/zaihuapd/43468) ⭐️ 8.0/10
-
-8 月 28 日，长鑫科技披露半年报：上半年实现营业收入 1503.1 亿元，同比增长 873.64%；归属于上市公司股东的净利润 776.05 亿元，而上年同期为亏损 23.32 亿元。上半年主营业务毛利率达 84.84%。 这一巨大反转使长鑫科技成为全球盈利最强的半导体公司之一，反映出 AI 需求与供给紧张共同驱动的存储芯片历史性上行周期。同时也凸显了中国在 DRAM 自给方面的快速进展，对全球存储价格以及与三星、SK 海力士、美光的竞争格局具有重大影响。 分季度看，第一季度归母净利润为 247.62 亿元，第二季度归母净利润为 528.43 亿元，环比增长 113%；经营活动现金流量净额达 1311.56 亿元，同比增长 2985.64%；基本每股收益为 1.2893 元。
-
-telegram · zaihuapd · 8月28日 11:34
-
-**背景**: 长鑫科技（CXMT）是中国领先的 DRAM 存储芯片制造商，前身为长鑫存储技术有限公司。公司持续扩大产能并推进工艺节点，以减少中国对进口存储芯片的依赖。本次财务暴增与 2025—2026 年存储市场超级周期相符，当时受 AI 服务器需求及主要厂商供给纪律影响，DRAM 和 NAND 价格大幅上涨。
-
-**标签**: `#semiconductor`, `#financial-results`, `#memory-chips`, `#CXMT`, `#China-tech`
-
----
-
-<a id="item-11"></a>
-## [Z.ai 发布 GLM-5.3-Flash：激活参数 18B，价格降为十分之一](https://t.me/zaihuapd/43471) ⭐️ 8.0/10
-
-Z.ai 发布了 GLM-5 系列首个原生多模态模型 GLM-5.3-Flash，这是一个总参数量 320B、激活参数仅 18B 的 MoE 模型。它在多项编程和智能体基准上超过 GLM-5.2，接近 Claude Opus 4.8，且限时 API 输入价格每百万 tokens 仅 0.075 美元，约为上代价格的十分之一。 这一发布表明，高效的 MoE 设计能够以极低的成本提供接近前沿模型的性能，可能会改变开发者选择 LLM API 的方式。激进的价格策略有望加速 GLM 模型在高并发编程和智能体场景中的采用。 GLM-5.3-Flash 总参数为 320B，但每个 token 仅激活 18B 参数，从而降低推理计算量。限时优惠价为每百万 tokens 输入 0.075 美元、缓存输入 0.015 美元、输出 0.25 美元，缓存存储暂时免费；原价则更高。
-
-telegram · zaihuapd · 8月28日 15:32
-
-**背景**: 混合专家（MoE）架构使用多个专门的子网络（“专家”）和一个门控机制，只为每个输入激活部分参数。稀疏 MoE 模型在推理时需要将整个网络加载到内存中，但只计算其中一小部分参数，因此“激活参数”比“总参数”更能反映计算成本。这种设计使实验室能够构建非常大的模型，同时保持每次推理的成本可控。此次价格降至上一代十分之一，与这种稀疏化带来的效率提升相吻合。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://gpt-news.net/why-active-parameters-matter-more-than-total-vram">Why Active Parameters Matter More Than Total VRAM – GPT News</a></li>
-<li><a href="https://www.linkedin.com/pulse/mixture-experts-moearchitecture-padmashri-suresh-o5nqc">Mixture of Experts ( MoE ) architecture</a></li>
-<li><a href="https://virtualizationreview.com/articles/2025/11/03/large-language-model-selection-why-the-parameter-count-isnt-everything.aspx">Large Language Model Selection -- Why the Parameter Count...</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI`, `#GLM`, `#LLM`, `#MoE`, `#Model Release`
-
----
-
-<a id="item-12"></a>
-## [OpenAI 因 SpaceX 收购 Cursor，将于 2026 年 11 月停止提供模型](https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/) ⭐️ 8.0/10
-
-OpenAI 宣布将终止向 Cursor 提供模型的合同，建议停服日期为 2026 年 11 月 12 日，理由是 SpaceX 收购 Cursor 后存在合规担忧。这一决定结束了双方近四年的合作。 这是一项重大行业动态，因为 Cursor 是最广泛使用的 AI 编程工具之一，失去 OpenAI 模型可能会重塑 AI 编程工具格局。这也凸显了企业收购和个人竞争如何能够扰乱 AI 生态系统的合作关系。 OpenAI 引用了 SpaceX 的违约记录，包括收购 Twitter 后违反合同，以及 xAI 今年早些时候在宣誓下承认违反 OpenAI 服务条款。与 Cursor 的定制协议允许在控制权变更后的限时窗口内终止合作，OpenAI 提供了合同允许的最大通知期。
-
-telegram · zaihuapd · 8月29日 02:24
-
-**背景**: Cursor 是由 Anysphere 开发的一款基于 Visual Studio Code 的 AI 编程编辑器，于 2026 年 8 月被 SpaceXAI 收购，而 SpaceXAI 前身是 xAI，后者在 2026 年 2 月被 SpaceX 收购。OpenAI 的这一决定反映了 OpenAI 与马斯克旗下公司之间日益紧张的关系，双方此前已有多起法律和合同纠纷。
+**背景**: Cursor 是一款 AI 辅助集成开发环境（IDE），基于 Visual Studio Code 分叉而来，由 Anysphere 开发，提供生成式 AI 功能帮助程序员编写代码。根据维基百科，Anysphere（以 Cursor 名义经营）是 SpaceXAI 的子公司；该公司成立于 2022 年，至 2026 年初估值达 293 亿美元、年度经常性收入超过 30 亿美元，随后被 SpaceXAI 收购并整合。此次冲突也反映了 OpenAI 与埃隆·马斯克之间的长期紧张关系——马斯克曾参与创立 OpenAI，但后来在发展方向上产生分歧。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Cursor_(code_editor)">Cursor (code editor)</a></li>
-<li><a href="https://en.wikipedia.org/wiki/XAI_(company)">XAI (company)</a></li>
+<li><a href="https://grokipedia.com/page/cursor-code-editor">Cursor (code editor)</a></li>
 
 </ul>
 </details>
 
-**标签**: `#OpenAI`, `#Cursor`, `#SpaceX`, `#AI tools`, `#industry news`
+**标签**: `#OpenAI`, `#Cursor`, `#SpaceX`, `#AI`, `#business`
+
+---
+
+<a id="item-7"></a>
+## [美国国防部将腾讯、宁德时代列入“涉军企业”名单](https://t.me/zaihuapd/43478) ⭐️ 8.0/10
+
+1 月 6 日，美国国防部更新了“1260H 清单”，将腾讯、宁德时代、长鑫存储、移远通信、道通科技等 13 家中国企业列为“涉军企业”。相关公司否认与军方有关联，腾讯股价盘中一度下跌 7.4%。 虽然该清单本身不构成直接制裁，但可能损害企业声誉，并加大美国财政部实施制裁的压力。此举标志着美中科技“脱钩”继续，给中国大型科技和电池供应商带来监管不确定性。 该清单依据《国防授权法》第 1260H 条，旨在识别与中国军方有关联的企业。被列入清单的企业不会立即被禁止与美国做生意，但可能受到《联邦采购条例》52.204-25 条款及《国防授权法》第 889 条的限制。
+
+telegram · zaihuapd · 8月29日 05:43
+
+**背景**: 美国《国防授权法》第 1260H 条授权国防部公开识别在美国运营但与中国军方有关联的企业。该认定可能影响与美国政府的合同以及投资者看法，法院近期也在审查国防部如何适用这一法律。分析人士认为，此举是美中在半导体、电池和电信等先进技术领域更广泛竞争的一部分。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.morganlewis.com/blogs/governmentcontractorguidebook/2026/08/section-1260h-listings-affiliate-past-performance-and-best-value-awards">Section 1260 H Listings, Affiliate Past Performance, and Best-Value...</a></li>
+<li><a href="https://governmentcontractsnavigator.com/tag/section-1260h-list/">Section 1260 H List Archives - Government Contracts Navigator</a></li>
+
+</ul>
+</details>
+
+**标签**: `#geopolitics`, `#US-China`, `#regulation`, `#tech industry`, `#stock market`
 
 ---
