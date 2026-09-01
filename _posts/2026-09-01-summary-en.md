@@ -5,188 +5,224 @@ date: 2026-09-01
 lang: en
 ---
 
-> From 37 items, 8 important content pieces were selected
+> From 44 items, 9 important content pieces were selected
 
 ---
 
-1. [Google Removes Manifest V2 Extensions from Chrome Web Store](#item-1) ⭐️ 8.0/10
-2. [NAT: Original Sin of Internet Centralization?](#item-2) ⭐️ 8.0/10
-3. [Sliding-window attention beats linear attention on long-context reasoning](#item-3) ⭐️ 8.0/10
-4. [Entropic Scree Tool Gauges Signal Strength in Dirty Data](#item-4) ⭐️ 8.0/10
-5. [Claude shared chat links exposed by search engines, leaking sensitive user data](#item-5) ⭐️ 8.0/10
-6. [OpenClaw 2.0: Largest Update Ever, 16,000+ Pull Requests](#item-6) ⭐️ 8.0/10
-7. [DeepSeek Releases Experimental Vision-Language Model on API](#item-7) ⭐️ 8.0/10
-8. [Xiaomi Unveils Three Xuanjie Chips; O3 SoC to Debut in 18 Fold](#item-8) ⭐️ 8.0/10
+1. [Claude Fable 5.1 Released with 1M Context, Cheaper Cache Reads](#item-1) ⭐️ 9.0/10
+2. [Firefox Essential for Browser Engine Diversity, Opinion Piece Argues](#item-2) ⭐️ 8.0/10
+3. [Jujutsu Creator Martin Joins ERSC, a GitHub Competitor](#item-3) ⭐️ 8.0/10
+4. [Small Transformer Trained in 1.5 Hours Outperforms Many LLMs on ARC](#item-4) ⭐️ 8.0/10
+5. [Korea's Sovereign AI Investment: Nvidia Gains, Hynix Loses](#item-5) ⭐️ 8.0/10
+6. [Latent Reasoning Landscape: Five Families Beyond Token Chains](#item-6) ⭐️ 8.0/10
+7. [TontaubeV1: Open-Weight TTS Model with Character-Level Tokenization](#item-7) ⭐️ 8.0/10
+8. [EvoUndo Framework Tackles Recoverability in LLM Agent Self-Evolution](#item-8) ⭐️ 8.0/10
+9. [BGP Hijacking of Virtualizor Updates Delivers Root Backdoor](#item-9) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Google Removes Manifest V2 Extensions from Chrome Web Store](https://webiterate.dev/google-removed-extensions-ublock-origin-108/) ⭐️ 8.0/10
+## [Claude Fable 5.1 Released with 1M Context, Cheaper Cache Reads](https://platform.claude.com/docs/en/models/fable-5-1/overview) ⭐️ 9.0/10
 
-Google has begun removing Manifest V2 (MV2) extensions from the Chrome Web Store, effectively delisting popular tools like uBlock Origin. Users upgrading to Chrome 139 and later will no longer be able to use these extensions. This marks a major milestone in Chrome's forced transition to Manifest V3, which many privacy advocates say weakens ad-blocking. It affects millions of users, fuels concerns about Google's control over the web, and is pushing users toward alternative browsers like Firefox. Manifest V3 restricts extensions by replacing the blocking webRequest API with declarativeNetRequest and limiting filter rules to roughly 30,000. uBlock Origin's developer recommends Firefox, where its full version remains available; Chrome users are offered uBlock Origin Lite instead.
+On September 1, 2026, Anthropic released Claude Fable 5.1, supporting a 1M-token context window and 128K-token maximum output. Input and output prices remain $10/M and $50/M tokens, while cache read pricing drops to one-quarter of the previous rate; Claude Mythos 5.1 remains invite-only for Project Glasswing participants. Fable 5.1 significantly expands the practical context available to long-horizon agents while cutting a major cost component of repeated-prompt workloads. This makes Anthropic's model more competitive for AI/ML practitioners building reasoning-heavy applications and may pressure other providers' pricing and context-window offerings. The cache read price drops from $1/M to $0.25/M tokens, making Fable 5.1's cache reads half the cost of Opus's $0.5/M. Anthropic lists three breaking changes, which commentators say patch inadvertent chain-of-thought disclosure rather than introduce new features.
 
-hackernews · twapi · Aug 31, 21:10 · [Discussion](https://news.ycombinator.com/item?id=49514878)
+telegram · zaihuapd · Sep 1, 17:54
 
-**Background**: Manifest V2 was the extension specification Chrome had used for years, allowing powerful extensions like uBlock Origin to intercept network requests and block ads before they load. Google announced MV3 in 2019 as a more secure, private, and performant replacement, but critics including the EFF argue it harms ad blocking and user autonomy. Chrome 139 disables all remaining MV2 extensions.
+**Background**: Claude is Anthropic's family of large language models; Fable 5.1 targets long-horizon agents and complex reasoning tasks, where models must maintain context and tool use over many steps. Prompt caching lets providers reuse repeated prompt prefixes, cutting latency and cost; the 1M-token context window means users can process very large documents or multi-step workflows in a single session. Claude Mythos 5.1 is part of Project Glasswing, an Anthropic initiative to secure critical software in the AI era, and access is invite-only.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://developer.chrome.com/docs/extensions/develop/migrate/mv2-deprecation-timeline">Manifest V 2 support timeline | Chrome for Developers</a></li>
-<li><a href="https://en.wikipedia.org/wiki/UBlock_Origin">uBlock Origin - Wikipedia</a></li>
-<li><a href="https://www.eff.org/deeplinks/2021/12/googles-manifest-v3-still-hurts-privacy-security-innovation">Google’s Manifest V 3 Still Hurts Privacy, Security, and Innovation</a></li>
+<li><a href="https://www.anthropic.com/glasswing">Project Glasswing : Securing critical software for the AI era \ Anthropic</a></li>
+<li><a href="https://www.ibm.com/think/topics/prompt-caching">What is Prompt Caching? | IBM</a></li>
+<li><a href="https://github.com/RUC-NLPIR/Awesome-Long-Horizon-Agents">GitHub - RUC-NLPIR/Awesome-Long-Horizon-Agents: The roadmap ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters largely condemn Google's decision, describing ad blocking as a safety necessity and suspecting Google of protecting its ad revenue. Many recommend switching to Firefox, with some noting that uBlock Origin has always worked better there. Overall sentiment is strongly anti-Chrome and in favor of browser diversity.
+**Discussion**: Comments are generally positive but mixed: an Anthropic employee praised Fable 5.1's more natural writing style and hinted at upcoming science results, while Simon Willison shared outputs across thinking-effort settings. Others questioned whether the model shows meaningful benchmark gains, and noted the cache-read price cut is both a competitive move and evidence that the original pricing underperformed; one commenter also identified the breaking changes as fixes for chain-of-thought disclosure.
 
-**Tags**: `#Chrome`, `#MV2`, `#uBlock Origin`, `#ad-blocking`, `#privacy`
+**Tags**: `#Claude`, `#LLM`, `#model release`, `#context window`, `#pricing`
 
 ---
 
 <a id="item-2"></a>
-## [NAT: Original Sin of Internet Centralization?](https://dreamstation.systems/personal/ntppost.html) ⭐️ 8.0/10
+## [Firefox Essential for Browser Engine Diversity, Opinion Piece Argues](https://www.newsonaut.com/articles/hang-on-to-your-firefox) ⭐️ 8.0/10
 
-A reflective essay argues that NAT (Network Address Translation) was a key early enabler of Internet centralization, and the original Linux NAT implementer, Rusty Russell, commented to acknowledge and expand on the technical decisions he made decades ago. 这一讨论为关于开放、对等的互联网为何让位于如今客户端-服务器、云主导模式的长期辩论，提供了罕见的内部视角。它也重新引发人们对 NAT 在塑造安全、地址稀缺性以及自托管难度方面作用的关注。 Rusty Russell explained that he prioritized squeezing more connections into a single IP address by avoiding port reservation, which made inbound connections from different addresses unroutable, effectively eliminating public endpoints. Commenters distinguish between ordinary controllable NAT, which they see as acceptable, and Carrier Grade NAT (CGNAT), which they call 'truly evil' for restricting users' freedoms.
+Newsonaut published an opinion piece arguing that Firefox must be kept alive because it is the only major browser not based on Chromium, despite Mozilla's controversial choices such as acquiring an ad-tech company and collecting user data. Browser engine diversity prevents a monoculture where one company controls web standards and performance. Losing Firefox would leave Chrome's Blink and Safari's WebKit as the only major engines, giving web developers fewer independent targets and users fewer privacy-friendly choices. The article acknowledges Mozilla's controversial decisions, including a move into ad-tech, data collection, and personalized ads in Firefox. Community commenters also note that Chrome forks do not count as engine diversity because they all rely on Blink and cannot meaningfully diverge from upstream.
 
-hackernews · robinpie · Aug 31, 02:23 · [Discussion](https://news.ycombinator.com/item?id=49504905)
+hackernews · speckx · Sep 1, 20:30 · [Discussion](https://news.ycombinator.com/item?id=49527748)
 
-**Background**: NAT was invented as a temporary workaround for IPv4 address exhaustion, allowing many private devices to share one public IP address. It remaps outgoing connection ports so return traffic can be sorted out, but it also blocks unsolicited inbound connections, which is why port forwarding and UPnP are needed for self-hosted services. IPv6 was designed to restore end-to-end connectivity, but NAT has persisted due to inertia, security justifications, and carrier deployment of CGNAT.
+**Background**: A browser engine is the core component that turns HTML and other web resources into the interactive pages users see. Today the majority of browsers use Google's Blink engine via Chromium, while Firefox uses Mozilla's Gecko engine and Safari uses WebKit, making Firefox the only major independent alternative. Browser engine diversity is considered important because it prevents any single vendor from unilaterally shaping web standards and ensures the web remains an open platform.
 
-**Discussion**: Comments show a mix of agreement and pushback: some mourn the loss of easy self-hosting and the normalization of client-server thinking, while others argue regular NAT is fine and has even protected insecure devices. Rusty Russell's confession adds weight to the idea that NAT's consequences were not fully foreseen, sparking broader concerns about meatspace norms being wrongly applied to cyberspace.
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Browser_engine">Browser engine - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Comparison_of_browser_engines">Comparison of browser engines - Wikipedia</a></li>
+<li><a href="https://css-tricks.com/browser-engine-diversity/">Browser Engine Diversity - CSS-Tricks</a></li>
 
-**Tags**: `#NAT`, `#Internet`, `#Networking`, `#Centralization`, `#IPv6`
+</ul>
+</details>
+
+**Discussion**: Commenters broadly support Firefox's role as the last independent engine, even when they disagree with Mozilla's strategy. Some criticize web developers for fueling the engine monoculture, while one user asks why Firefox's ad-blocking advantage isn't a bigger selling point; others report growing performance and stability issues with the browser.
+
+**Tags**: `#Firefox`, `#browser engines`, `#Mozilla`, `#web diversity`, `#software ecosystem`
 
 ---
 
 <a id="item-3"></a>
-## [Sliding-window attention beats linear attention on long-context reasoning](https://www.reddit.com/r/MachineLearning/comments/1w3j1vw/slidingwindow_attention_beats_linear_on/) ⭐️ 8.0/10
+## [Jujutsu Creator Martin Joins ERSC, a GitHub Competitor](https://ersc.io/blog/martin-joins-ersc) ⭐️ 8.0/10
 
-A new arXiv preprint claims that sliding-window attention (SWA) with sinks outperforms linear attention variants by 2 to 10 times on long-context reasoning benchmarks such as BABILong and Needle-in-a-Haystack, all without any post-training. This result challenges the linear attention research direction and may affect labs that have invested heavily in post-training to produce linear models. It suggests the field has been benchmarking against the wrong baselines, which could reshape how long-context efficiency methods are evaluated. SWA requires no post-training, runs fast, and keeps memory usage low. The authors strongly recommend switching to SWA instead of post-training linear models, noting that linear attention may need to be trained from scratch or undergo extensive post-training to match SWA.
+Martin, the creator of the Jujutsu version control system, has joined ERSC (East River Source Control), a code hosting platform that is building its model around Jujutsu. ERSC aims to provide a Git-compatible, GitHub-like platform with first-class conflict handling and fine-grained access controls. This move signals growing momentum behind Jujutsu as a serious alternative to Git and positions ERSC as a potential challenger to GitHub's dominance. If ERSC delivers on its promises, it could reshape how developers host and collaborate on code. ERSC's version control model is based on Jujutsu, with backwards compatibility with Git, and it plans to offer features like fine-grained ACLs. Community discussion notes that jj's key advantage is its ability to undo operations easily, and there is speculation that ERSC might develop an alternative backend for jj beyond Git.
 
-reddit · r/MachineLearning · /u/Justgototheeffinmoon · Aug 31, 16:35
+hackernews · steveklabnik · Sep 1, 17:46 · [Discussion](https://news.ycombinator.com/item?id=49525297)
 
-**Background**: Standard transformer self-attention scales quadratically with sequence length, making long-context processing expensive. Linear attention aims to reduce this to linear complexity, but often requires post-training to work well; sliding-window attention reduces computation by only attending to a local window, and attention sinks retain early tokens to stabilize generation. BABILong is a benchmark that uses a needle-in-a-haystack approach to test reasoning across facts embedded in extremely long documents.
+**Background**: Jujutsu (jj) is a modern, distributed version control system developed at Google, designed to improve user experience over Git. It is Git-compatible, meaning it can be used directly with existing Git repositories, and it records every change automatically to simplify parallel development. ERSC is a new code hosting platform that bases its version control model on Jujutsu, aiming to address limitations such as conflict handling and access control.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/html/2608.28444v1">Sliding - window beats linear attention</a></li>
-<li><a href="https://www.alphaxiv.org/abs/2608.28444">Sliding - window beats linear attention | alphaXiv</a></li>
-<li><a href="https://arxiv.org/abs/2406.10149">[2406.10149] BABILong: Testing the Limits of LLMs with Long Context Reasoning-in-a-Haystack</a></li>
+<li><a href="https://ersc.io/blog/ersc-availability">An update on ERSC availability | East River Source Control</a></li>
+<li><a href="https://zenn.dev/kosk_t/articles/jj-introduction-guide?locale=en">Benefits and Basic Usage of Jujutsu (jj), a Git-Compatible Version ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Attention`, `#Long-context`, `#LLM`, `#Efficiency`, `#Research`
+**Discussion**: Community sentiment is mixed: some praise jj's user experience and undo capabilities, while others question ERSC's value proposition compared to GitHub, arguing that Git already covers all functionality and ERSC has not articulated its surplus value. One commenter also asks whether ERSC is working on an alternative backend for jj.
+
+**Tags**: `#jujutsu`, `#version-control`, `#devtools`, `#git`, `#ERSC`
 
 ---
 
 <a id="item-4"></a>
-## [Entropic Scree Tool Gauges Signal Strength in Dirty Data](https://www.reddit.com/r/MachineLearning/comments/1w3br9c/how_to_assess_if_there_is_a_strong_signal_in_your/) ⭐️ 8.0/10
+## [Small Transformer Trained in 1.5 Hours Outperforms Many LLMs on ARC](https://mvakde.github.io/blog/44-on-arc-1/) ⭐️ 8.0/10
 
-A new diagnostic tool called Entropic Scree (v1.0.0) is now available as an R function, with a preprint, and it estimates signal-to-noise ratio, intrinsic rank, and linear sufficiency in high-dimensional real-world data using a transformed mutual information metric instead of variance-based PCA. This matters because standard PCA-based methods rely on linear variance assumptions that break down on messy, high-dimensional data; Entropic Scree's mutual information approach gives practitioners a more robust way to know whether their data contains a learnable signal before building models. The tool also provides an exploratory map of decoupled variable sub-networks and serves as a practical diagnostic for the 'From Garbage to Gold' framework, which explains when uncurated data can still support accurate prediction. Python and R packages are planned, but currently only the R function Entropic.Scree.v1.0.0 is available, and the approach has not yet undergone broad community validation or extensive real-world benchmarking.
+A developer trained a small autoregressive transformer from scratch in just 1.5 hours, and it outperforms many large language models on the ARC-1 reasoning benchmark. The result demonstrates that challenging reasoning tasks can be tackled without massive training compute. This challenges the prevailing assumption that scaling up models is required for strong reasoning performance. It could inspire more compute-efficient approaches to AI reasoning and make state-of-the-art reasoning capabilities more accessible to individual developers. The model is a small transformer, not an LLM, and was evaluated on the ARC benchmark, a meta-learning task where solving the evaluation puzzles is permitted. Performance gains came from modern architectural choices such as SwiGLU and RMSNorm, plus scaling to 8 layers.
 
-reddit · r/MachineLearning · /u/Chocolate_Milk_Son · Aug 31, 12:02
+hackernews · porridgeraisin · Sep 1, 09:52 · [Discussion](https://news.ycombinator.com/item?id=49519939)
 
-**Background**: Principal component analysis (PCA) and related methods summarize variance and assume linear relationships, which often make them misleading for 'dirty' datasets with errors, missing values, and nonlinear dependencies. Mutual information measures how much knowing one variable tells you about another without assuming a relationship shape; Entropic Scree uses it to estimate how much genuine signal a dataset holds relative to its idiosyncratic noise. Linear sufficiency, in turn, asks whether a linear projection preserves all the information needed for estimation, which the tool reports to indicate whether standard PCA assumptions are appropriate. The referenced 'From Garbage to Gold' framework argues that data quality should be evaluated at the portfolio level rather than item by item, providing theoretical support for learning directly from messy enterprise data.
+**Background**: The Abstraction and Reasoning Corpus (ARC) is a benchmark introduced by François Chollet in 2019 to measure fluid intelligence in AI. It consists of visual reasoning puzzles that require generalization to new situations, and most large language models still struggle with it. This blog post shows an efficient alternative path using a small transformer trained from scratch.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2603.12288">[2603.12288] From Garbage to Gold: A Data-Architectural Theory of Predictive Robustness</a></li>
-<li><a href="https://arxiv.org/html/2603.12288">From Garbage to Gold: A Data-Architectural Theory of Predictive Robustness</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Sufficient_statistic">Sufficient statistic - Wikipedia</a></li>
+<li><a href="https://lab42.global/arc/">About ARC – Lab42</a></li>
+<li><a href="https://www.emergentmind.com/topics/abstraction-and-reasoning-corpus-arc">Abstraction and Reasoning Corpus ( ARC )</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#data-analysis`, `#mutual-information`, `#dimensionality-reduction`, `#tabular-data`, `#diagnostic-tool`
+**Discussion**: The author joined the discussion to clarify that this is not an LLM and that ARC is designed as a meta-learning benchmark, so using eval puzzles for training is allowed. Some commenters raised concerns about sample inefficiency and the incremental 'architecture squeezing' approach, while others congratulated the author on the achievement and publication.
+
+**Tags**: `#transformer`, `#ARC-benchmark`, `#efficient-training`, `#reasoning`, `#deep-learning`
 
 ---
 
 <a id="item-5"></a>
-## [Claude shared chat links exposed by search engines, leaking sensitive user data](https://t.me/zaihuapd/43511) ⭐️ 8.0/10
+## [Korea's Sovereign AI Investment: Nvidia Gains, Hynix Loses](https://newsletter.semianalysis.com/p/koreas-trillion-dollar-sovereign) ⭐️ 8.0/10
 
-Anthropic's Claude shared-chat feature generates public links without noindex tags, so Google and other search engines have indexed them. Sensitive content such as API keys, crypto wallet information, resumes, legal consultation records, internal company project data, and Social Security numbers is now publicly searchable. This is a serious privacy flaw because anyone can discover private conversations through ordinary web searches, exposing credentials and personal data that can be misused or sold. It affects all Claude users who have used the share feature, and Anthropic's slow response heightens the risk while ChatGPT's similar bug was patched quickly. The leak includes API keys, cryptocurrency wallets, resumes, attorney-client consultations, internal company documents, and Social Security numbers. Anthropic has not yet fixed the vulnerability, so users are advised to manually delete private or financial chats from the Settings > 'Shared Chats' management page.
+SemiAnalysis predicts that Korea's trillion-dollar sovereign AI initiative will benefit Nvidia while pressuring Hynix and Samsung. The analysis introduces a Korean 'National AI Tournament' that eliminates the best non-Chinese open-source model, with significant implications for the AI chip market. This strategic forecast highlights how government AI investments can reshape global semiconductor competition. It suggests that sovereign AI initiatives may accelerate Nvidia's dominance while pressuring Korean memory makers, and it underscores the growing importance of open-source models in the AI ecosystem. The analysis argues that Nvidia relies on open-source models to sustain demand for its GPUs. Hynix and Samsung, despite being memory suppliers, may face challenges because open-source models reduce the need for high-end memory or because the tournament favors other architectures.
 
-telegram · zaihuapd · Aug 31, 03:22
+rss · Semianalysis · Sep 1, 20:14
 
-**Background**: Claude is a series of large language models and AI assistants developed by Anthropic, released as a chatbot in March 2023. A noindex HTML meta tag instructs search engine bots such as Google not to index a page, and shared public links normally need this tag to stay out of search results. An API key is a code used to authenticate an application or user in computer systems, and leaking it can allow unauthorized access. About a year ago, ChatGPT suffered a similar shared-links indexing bug that was quickly fixed.
+**Background**: Sovereign AI refers to a nation's ability to develop and control its own AI infrastructure, data, and models, as defined by Red Hat and McKinsey. Korea has launched a national AI committee and policy strategy to boost its AI capabilities, including a tournament-like competition to select a leading open-source model. The outcome could determine which chip vendors benefit from public investment.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Claude_(AI)">Claude ( AI ) - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Noindex">noindex - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/API_key">API key - Wikipedia</a></li>
+<li><a href="https://www.redhat.com/en/topics/ai/sovereign-ai">What is sovereign AI?</a></li>
+<li><a href="https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-sovereign-ai">What is sovereign AI? | McKinsey</a></li>
+<li><a href="https://www.youtube.com/watch?v=ExHftmlOAu8">Korea : National AI policy strategy direction - YouTube</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#privacy`, `#security`, `#Claude`, `#Anthropic`, `#vulnerability`
+**Tags**: `#AI`, `#semiconductors`, `#sovereign AI`, `#Nvidia`, `#Hynix`
 
 ---
 
 <a id="item-6"></a>
-## [OpenClaw 2.0: Largest Update Ever, 16,000+ Pull Requests](https://openclaw.ai/blog/openclaw-2-accidentally) ⭐️ 8.0/10
+## [Latent Reasoning Landscape: Five Families Beyond Token Chains](https://www.reddit.com/r/MachineLearning/comments/1w4evwo/latent_reasoning_landscape_in_2026_mapping_bdhcq/) ⭐️ 8.0/10
 
-OpenClaw released version 2.0 on August 30, its largest update ever, incorporating over 16,000 pull requests from 933 contributors, including 569 first-time contributors. The update overhauls installation, messaging, memory, skills, models, browser, plugins, security, and adds shared cloud sessions for collaboration. This release significantly expands OpenClaw's capabilities and demonstrates strong community momentum, reinforcing its position in the open-source AI agent ecosystem. The scale of contributions—roughly half of all pull requests in the project's history—could attract more developers and users to agentic AI tools. The team went nearly seven weeks without a release to consolidate the update. It simplifies the installation process, rebuilds the browser-side experience, and introduces shared cloud sessions that allow multiple users to collaborate in real time.
+A Reddit analysis by /u/Typical-Scene-5794 maps latent reasoning into five distinct families: continuous thoughts in autoregressive LMs (Coconut, Soft Thinking), compressed discrete non-linguistic tokens (Abstract-CoT), recurrent depth/looped models, task-trained recursive solvers (HRM, TRM), and in-context recurrent latent solvers (BDH-CQ). The author argues that progress toward AGI may depend more on reasoning beyond token streams than on generating ever-longer chains of thought. The taxonomy helps researchers navigate a fast-growing field and highlights a key limitation of verbalized chain-of-thought: traces do not track the actual computation. It also raises an urgent industry question—if latent reasoning wins on efficiency, what happens to the readable traces that interpretability and evaluation work currently depends on? The post distinguishes systems along two dimensions: how a system acquires a new task (context, memory, or gradient-based optimization) and where its intermediate computation happens (language tokens, abstract tokens, or continuous latent states). Notably, BDH-CQ is reported to exceed the previously published cost–accuracy Pareto frontier on public ARC-AGI-1, and early pretraining experiments show transformer-like scaling laws up to 600B parameters while preserving latent reasoning behavior.
 
-telegram · zaihuapd · Aug 31, 04:38
+reddit · r/MachineLearning · /u/Typical-Scene-5794 · Sep 1, 15:14
 
-**Background**: OpenClaw is a free, open-source autonomous AI agent that runs on a user's machine and uses messaging platforms as its primary interface. AI agents use large language models to pursue goals, use tools, and perform multi-step tasks with some autonomy. Pull requests are GitHub's collaboration feature for proposing, reviewing, and merging code changes, which is how the 16,000+ contributions were aggregated.
+**Background**: Latent reasoning is an alternative to chain-of-thought (CoT) prompting where a model repeatedly transforms its continuous hidden state and decodes only the final answer, rather than verbalizing every intermediate step. Coconut (Hao et al., 2024) is a key example: it feeds the model's own final hidden state back as the next input embedding, enabling reasoning in a continuous latent space. Other families include looped Transformers that reapply a shared block to a latent state, and recursive solvers such as HRM/TRM that refine latent and candidate-answer states. BDH-CQ, built on the Dragon hatchling architecture, writes demonstrations directly into a recurrent memory at inference time, then solves new test inputs via iterative computation in a separate continuous latent space.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://openclaw.ai/">OpenClaw — Open -Source AI Assistant</a></li>
-<li><a href="https://en.wikipedia.org/wiki/AI_agent">AI agent</a></li>
-<li><a href="https://docs.github.com/en/pull-requests/reference/pull-requests">Pull requests - GitHub Docs</a></li>
+<li><a href="https://github.com/lucidrains/bdh-cq">GitHub - lucidrains/ bdh - cq : Implementation of BDH - CQ : In-Context...</a></li>
+<li><a href="https://huggingface.co/papers/2608.09888">Paper page - BDH - CQ : In-Context Learning with Recurrent Latent...</a></li>
+<li><a href="https://medium.com/@yongshaoruan/from-hrm-to-trm-the-evolution-of-iterative-reasoning-ff0a24705ef9">From HRM to TRM : The Evolution of Iterative Reasoning | Medium</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#OpenClaw`, `#open-source`, `#release`, `#AI agents`, `#developer tools`
+**Discussion**: The post is an expert analysis rather than a discussion thread, and it explicitly asks readers to identify missing families or papers. It also raises the question of whether chain-of-thought legibility is a safety property worth paying an efficiency penalty to keep. Since no community comments were provided in the content, the overall sentiment of the discussion cannot be summarized from this data.
+
+**Tags**: `#latent reasoning`, `#LLM`, `#chain-of-thought`, `#AGI`, `#machine learning`
 
 ---
 
 <a id="item-7"></a>
-## [DeepSeek Releases Experimental Vision-Language Model on API](https://t.me/zaihuapd/43518) ⭐️ 8.0/10
+## [TontaubeV1: Open-Weight TTS Model with Character-Level Tokenization](https://www.reddit.com/r/MachineLearning/comments/1w4afjn/we_released_tontaubev1_a_characterlevel_tts_model/) ⭐️ 8.0/10
 
-DeepSeek has released the experimental vision-language model deepseek-v4-flash-vision-exp, now available via its API. The official documentation and pricing were updated on the same day. This marks DeepSeek's expansion into multimodal AI, allowing developers to build applications that interpret images and text together. It strengthens DeepSeek's position against commercial rivals like OpenAI's GPT-4V and Anthropic's Claude with vision capabilities. The model accepts mixed text-and-image input in Chat Completions, Responses, and the Anthropic-compatible Messages API, supporting image input via URL, Base64 and files. Compared to DeepSeek-V4-Flash-0731, it substantially improves multimodal agent capabilities while maintaining comparable text-only agent performance.
+Two researchers released TontaubeV1, a 2.9B-parameter open-weight text-to-speech model, along with its underlying DualCodec-based architecture. The model is optimized for expressive long-form narration and low-latency local inference, and supports zero-shot voice cloning from up to one minute of reference audio. As an open-weight TTS model, TontaubeV1 offers the community a novel approach that combines character-level tokenization with a multi-codebook audio codec, potentially improving expressive and long-form speech synthesis. Its design choices may influence future TTS research, particularly for low-resource languages and local deployment scenarios. The model starts from a Qwen3-1.7B checkpoint for its semantic codebook model and forces the Qwen tokenizer to treat spoken text as a per-character sequence, which the authors say improves OOD robustness. It uses a chunked context with logical position IDs to align text and audio streams, and was trained on roughly 200k hours of speech across 7 languages (primarily tested on English and German).
 
-telegram · zaihuapd · Aug 31, 11:41
+reddit · r/MachineLearning · /u/EAVDR · Sep 1, 12:23
 
-**Background**: A vision-language model (VLM) is an AI system that interprets and generates information from both images and text, extending large language models beyond text-only tasks. Many major providers such as OpenAI, Google, Anthropic and Microsoft have added vision capabilities to their flagship models. DeepSeek's experimental release gives developers an open alternative for multimodal applications like image description, OCR from screenshots, and chart analysis.
+**Background**: Modern LLM-based TTS models typically tokenize text into subword units and audio into discrete tokens from a neural audio codec, then train a language model to predict audio tokens from text tokens. DualCodec, introduced at Interspeech 2025, is a low-frame-rate (12.5Hz or 25Hz) semantically-enhanced codec that integrates SSL and waveform representations, and has been reported to outperform SpeechTokenizer and Mimi for speech reconstruction and TTS. Character-level tokenization is less common in TTS because it usually lengthens sequences, but the Tontaube authors found it simplifies character-to-sound alignment and reduces out-of-distribution token combinations.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://api-docs.deepseek.com/guides/vision/?ref=upstract.com">Vision | DeepSeek API Docs</a></li>
-<li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp">deepseek-ai/ DeepSeek - V 4 - Flash - Vision - Exp · Hugging Face</a></li>
-<li><a href="https://chat-deep.ai/docs/deepseek-api-vision-input/">DeepSeek Vision API: Image Input via URL, Base64 & Files</a></li>
+<li><a href="https://github.com/jiaqili3/dualcodec">GitHub - jiaqili3/DualCodec: [Interspeech 2025] DualCodec: A ...</a></li>
+<li><a href="https://arxiv.org/abs/2505.13000">[2505.13000] DualCodec: A Low-Frame-Rate, Semantically ... DualCodec Demo Page DualCodec: A Low-Frame-Rate, Semantically-Enhanced Neural ... amphion/dualcodec · Hugging Face DualCodec: A Low-Frame-Rate, Semantically-Enhanced Neural ... dualcodec · PyPI</a></li>
+<li><a href="https://www.emergentmind.com/topics/character-level-tokenization-35824430-1d6f-4d5b-8134-ffecf5644b4b">Character-level Tokenization - emergentmind.com</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#DeepSeek`, `#API`, `#vision-language model`, `#AI release`, `#LLM`
+**Tags**: `#TTS`, `#Machine Learning`, `#Speech Synthesis`, `#Open-Weight Model`, `#Audio Codec`
 
 ---
 
 <a id="item-8"></a>
-## [Xiaomi Unveils Three Xuanjie Chips; O3 SoC to Debut in 18 Fold](https://t.me/zaihuapd/43524) ⭐️ 8.0/10
+## [EvoUndo Framework Tackles Recoverability in LLM Agent Self-Evolution](https://www.reddit.com/r/MachineLearning/comments/1w4m0hq/evoundo_recoverabilityconstrained_selfevolution/) ⭐️ 8.0/10
 
-Xiaomi announced three new Xuanjie chips: the AI flagship SoC Xuanjie O3, the 1.22 TB/s AI accelerator Xuanjie O100, and the 3nm smart-driving chip Xuanjie D100, with all three completing tape-out validation. The O3 SoC will be the first to power the Xiaomi 18 Fold. This marks Xiaomi's push into proprietary silicon across mobile, AI acceleration, and automotive, reducing reliance on external chip vendors. The O3's claim of being the world's first LPDDR6-capable mobile processor and its strong benchmark scores could intensify competition among smartphone SoC makers. The Xuanjie O3 uses a ten-core all-large-core CPU and its multi-core benchmark reportedly broke the 15,000-point mark. It also debuts the 16-core G2-Ultra NX GPU, claimed to deliver 85% higher performance and 64% lower power draw than the previous O1, and supports LPDDR6 memory with higher bandwidth.
+The paper introduces EvoUndo, a framework for synthesizing and independently verifying the recoverability of LLM agent self-modifications across counterfactual states. Across 600 one-shot self-evolution tasks, it found 197 capability-improving mutations that failed recoverability verification, and an extended recovery calculus enabled recovery of 191 of them. Reliable agent self-evolution requires ensuring that runtime self-modifications can be safely reversed, a problem most current systems ignore. By exposing the scale of recoverability failures and showing how to fix them, EvoUndo contributes directly to safer LLM agent design and AI safety. In experiments on the gpt-oss-120b backbone, conventional prompt-based repair recovered 0 of 197 natural failures, while a deterministic oracle with an extended recovery language recovered 191/197. Exact state-address grounding boosted recovery from 0/48 to 38/48 (79.2%) where the original recovery language was sufficient, and extending the language enabled 142/143 (99.3%) recovery in the Oracle-defined S1 stratum.
 
-telegram · zaihuapd · Aug 31, 15:15
+reddit · r/MachineLearning · /u/AccomplishedLeg1508 · Sep 1, 19:17
 
-**Background**: Tape-out validation means the chip design has been sent to a foundry and the first physical samples have come back for testing, confirming the design works. LPDDR6 is the latest low-power memory standard from JEDEC, designed to provide higher bandwidth for on-device AI workloads in smartphones and other mobile devices; Xiaomi's partner CXMT also recently announced LPDDR6 mass production, and Xiaomi phones are expected to debut the first commercial LPDDR6 chips.
+**Background**: LLM agents increasingly modify their own prompts, tools, middleware, resources, and execution harnesses at runtime, a process known as self-evolution. Such changes can improve capability, but a successful mutation may leave persistent effects that cannot be safely reversed in states different from the one in which it was created. EvoUndo addresses this by representing, synthesizing, diagnosing, and independently verifying recoverability across counterfactual states.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/LPDDR">LPDDR</a></li>
-<li><a href="https://www.tomshardware.com/pc-components/dram/chinas-cxmt-beats-western-chipmakers-to-announcement-of-lpddr6-mass-production-xiaomi-smartphones-to-debut-industrys-first-lpddr6-chips">China's CXMT beats Western chipmakers to... | Tom's Hardware</a></li>
-<li><a href="https://gadgets.beebom.com/guides/xiaomi-xring-o3-benchmark-specs">Xiaomi Xring O3: Benchmarks and Specs | Beebom Gadgets</a></li>
+<li><a href="https://arxiv.org/abs/2608.28363">[2608.28363] EvoUndo: Recoverability -Constrained Self - Evolution ...</a></li>
+<li><a href="https://huggingface.co/papers/2608.28363">Paper page - EvoUndo: Recoverability -Constrained Self - Evolution ...</a></li>
+<li><a href="https://aiweekly.co/alerts/evoundo-197-of-600-agent-self-edits-fail-recovery-test">EvoUndo: 197 of 600 agent self-edits fail recovery test | AI ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Xiaomi`, `#chip`, `#AI`, `#SoC`, `#hardware`
+**Tags**: `#LLM agents`, `#self-evolution`, `#recoverability`, `#AI safety`, `#framework`
+
+---
+
+<a id="item-9"></a>
+## [BGP Hijacking of Virtualizor Updates Delivers Root Backdoor](https://www.virtualizor.com/blog/security-incident-bgp-hijacking/) ⭐️ 8.0/10
+
+Virtualizor's update infrastructure was compromised via BGP routing hijacking between August 28-30, 2026. Attackers used valid TLS certificates to push malicious update packages that installed a root backdoor on affected virtualization hosts. This is a significant supply-chain attack because it targeted the update distribution mechanism of a widely used virtualization control panel, affecting hosting providers and their customers. It demonstrates that even with proper code and TLS protections, infrastructure-level routing attacks can compromise software integrity. The malicious updates were delivered only during the hijack window, and the vendor says a small number of installations updated in that period were affected. Independent forensics found the payload wrote root SSH keys, installed a Java component, and created persistent services; AlbaHost found 5 of 34 hypervisors compromised.
+
+telegram · zaihuapd · Sep 1, 06:05
+
+**Background**: BGP (Border Gateway Protocol) is the routing protocol that directs Internet traffic between networks. BGP hijacking occurs when an attacker maliciously reroutes traffic destined for a legitimate IP prefix to an attacker-controlled network, allowing interception or tampering. Virtualizor is a web-based VPS control panel used by hosting providers to deploy and manage virtual servers. Because update mechanisms inherently trust the server for new packages, a hijacked update channel can silently deliver backdoors to many machines.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.cloudflare.com/learning/security/glossary/bgp-hijacking/">What Is BGP Hijacking ?</a></li>
+<li><a href="https://phoenixnap.com/blog/bgp-hijacking">BGP Hijacking : Definition, Examples, Prevention</a></li>
+<li><a href="https://www.virtualizor.com/">Virtualizor – Cloud Control Panel</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#security`, `#supply-chain`, `#BGP-hijacking`, `#rootkit`, `#virtualization`
 
 ---
